@@ -1,0 +1,1610 @@
+1. Write a simple program in HTML  that displays the heading "HTML defines the content and structure of your website" on the web browser?
+ 
+ Answer:
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple heading title</title>
+</head>
+<body>
+    <h1>HTML defines the content and structure of your website</h1>
+</body>
+</html>
+
+2. Explain the purpose of comments in HTML and provide an example of how to use comments in an HTML document?
+
+Answer:
+Comments in HTML are used to reminders within the code that are not displayed in the browser. we can add notes. It's help developers to maintain or collaborate with others. 
+
+Purpose of Comments in HTML:
+
+Documentation: If any other developers are working in same code then he can understand easily.
+
+Debugging: Comments can be used to temporarily disable parts of the code during testing or debugging without deleting them.
+
+Organization: Comments help us to organized code by sepearating section by section.
+
+Example of Using Comments in an HTML Document:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of HTML Comments</title>
+</head>
+<body>
+    <!-- Main heading of the page -->
+    <h1>Welcome to My portfolio</h1>
+
+    <!-- Introduction section -->
+    <p>Well this is keshav kumar, I am from muzaffarpur that is in bihar. </p>
+
+    <!-- 
+        The following section will contain links to other pages.
+        This is a placeholder for future content.
+    -->
+    <div>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+3.Write an HTML program that includes a heading, a paragraph of text, a horizontal line, and a line break. Arrange these elements to create a simple web page layout.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page Layout</title>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Welcome to My eCommerce website</h1>
+
+    <!-- Paragraph of text -->
+    <p>
+    Here you can purchase any clothes whatever you want like shirt,jeans,cargo jeans, formal pant what you like . you can purchage it.
+    </p>
+
+    <!-- Horizontal Line -->
+    <hr>
+
+    <!-- Additional Content with Line Break -->
+    <p>
+        apart from the clothes you can also purchase shoes. 
+        <br>
+        If you want to any cloths then you can pay money or cash delivery is also there in our website.
+    </p>
+</body>
+</html>
+
+4. Write a short note on Tag and element with an example?
+
+Answer:
+Tag : A tag is a basic component of HTML used to define or describe content. Tags are enclosed in angle brackets. There are two main types of tags:
+
+. Opening tag: Marks the beginning of an element. For example, `<p>` starts a paragraph.
+. Closing tag: Marks the end of an element. It is similar to the opening tag but includes a forward slash (`/`). For example, `</p>` ends the paragraph.
+
+Elemnent: An element is a combination of an opening tag, content, and a closing tag. The element defines a part of the document structure. For instance, a paragraph element consists of an opening `<p>` tag, the text of the paragraph, and a closing `</p>` tag.
+
+Here is example of element: 
+                             <p>This is a paragraph.</p>
+
+                             In this example:
+
+                            . `<p>` is the opening tag.
+                            . `This is a paragraph.` is the content.
+                            . `</p>` is the closing tag.
+
+
+5. What is the  DOCTYPE Declaration in HTML?
+
+Answer:
+DOCTYPE Declaration : this declaration defines the documet type and version of html being used.
+
+Key Points :
+
+. The `<!DOCTYPE>` declaration does not have a closing tag and is not an HTML element; it is a declaration.
+. For HTML5, it is designed to be simple and easy to remember, making it accessible for all levels of web development.
+
+.Core HTMl
+
+1.Build a simple webpage that displays text as shown in the below image.
+
+Answer:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First Assignment of jawascript</title>
+</head>
+
+<body>
+    <p><b>this text will be bolder</b></p>
+    <p><i>this text will be italic</i></p>
+    <p><mark>this text will be highlighted</mark></p>
+    <p>this is normal text <sup>this will be super scripted</sup> This is normal again</p>
+    <p>this is normal text <sub>this text will be subscripted</sub></p>
+    <p>Normal text <small>small text</small></p>
+    <p><del>this text will be deleted</del></p>
+</body>
+</html>
+
+2.Build a s
+imple webpage that hepls users navigate different web developement-related websites. Note:on clicking the hyperlink the web pages should open in a new tab. Below is reference image.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First Assignment of jawascript</title>
+</head>
+<body>
+   
+    <h1>Navigate Me:</h1>
+
+    <p>Take me to <a href="https://pwskills.com/">PW Skills</a></p>
+    <p>Take me <a href="https://developer.mozilla.org/en-US/docs/Learn">MDN docs</a> to know more about Web Developmemt</p>
+    <p>Take me to <a href="https://lab.pwskills.com/">PW Skills Lab</a>to practice live coding.</p>
+
+</body>
+</html>
+
+3. Build a simple blog web page with 3 pages home, web deveplopment, and web design. Each page must contain hyperlniks to other pages in the top, a heading of the page topic and a paragraph of information.For the home page you can adds some information about yourself.
+
+Answer:
+
+                    Home Page (index.html)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Blog</title>
+    <style>
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="web-development.html">Web Development</a>
+        <a href="web-design.html">Web Design</a>
+    </nav>
+    <h1>Welcome to My Blog</h1>
+    <p>Hello! I'm [Your Name], a passionate web developer and designer. This blog is a place where I share my knowledge, experiences, and insights on web development and design. Stay tuned for tips, tutorials, and more!</p>
+</body>
+</html>
+
+                      Web Development Page (web-development.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development - My Blog</title>
+    <style>
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="web-development.html">Web Development</a>
+        <a href="web-design.html">Web Design</a>
+    </nav>
+    <h1>Web Development</h1>
+    <p>Web development involves creating and maintaining websites. It includes aspects such as web design, web publishing, web programming, and database management. Web development can range from creating simple static pages to complex web applications.</p>
+</body>
+</html>
+
+                               Web Design Page (web-design.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design - My Blog</title>
+    <style>
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="web-development.html">Web Development</a>
+        <a href="web-design.html">Web Design</a>
+    </nav>
+    <h1>Web Design</h1>
+    <p>Web design is the process of creating the visual aspects of a website. It involves planning and creating the layout, color scheme, typography, and other visual elements to provide a cohesive user experience. Good web design is essential for creating engaging and accessible websites.</p>
+</body>
+</html>
+
+
+4. Create an ordered list of html tags. Each list item must include the tag name and some information about the tag.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Information</title>
+</head>
+<body>
+    <h1>HTML Tags Information</h1>
+    <ol>
+        <li>
+            <strong>&lt;html&gt;</strong> - The root element of an HTML document. It wraps all other elements and signifies the beginning and end of the document.
+        </li>
+        <li>
+            <strong>&lt;head&gt;</strong> - Contains meta-information about the HTML document, such as its title and links to stylesheets.
+        </li>
+        <li>
+            <strong>&lt;title&gt;</strong> - Defines the title of the document, which is displayed in the browser's title bar or tab.
+        </li>
+        <li>
+            <strong>&lt;meta&gt;</strong> - Provides metadata about the HTML document, such as the character set, author, and description. It is an empty element.
+        </li>
+        <li>
+            <strong>&lt;link&gt;</strong> - Defines the relationship between the current document and an external resource, commonly used to link to stylesheets. It is an empty element.
+        </li>
+        <li>
+            <strong>&lt;script&gt;</strong> - Used to embed or reference executable scripts, such as JavaScript.
+        </li>
+        <li>
+            <strong>&lt;style&gt;</strong> - Contains CSS styles to apply to the HTML document.
+        </li>
+        <li>
+            <strong>&lt;body&gt;</strong> - Contains the content of an HTML document, such as text, images, and other media.
+        </li>
+        <li>
+            <strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Define HTML headings, with &lt;h1&gt; being the highest (or most important) level and &lt;h6&gt; the lowest.
+        </li>
+        <li>
+            <strong>&lt;p&gt;</strong> - Represents a paragraph of text.
+        </li>
+        <li>
+            <strong>&lt;a&gt;</strong> - Defines a hyperlink, which is used to link from one page to another.
+        </li>
+        <li>
+            <strong>&lt;img&gt;</strong> - Embeds an image into an HTML document. It is an empty element.
+        </li>
+        <li>
+            <strong>&lt;ul&gt;</strong> - Defines an unordered list of items.
+        </li>
+        <li>
+            <strong>&lt;ol&gt;</strong> - Defines an ordered list of items.
+        </li>
+        <li>
+            <strong>&lt;li&gt;</strong> - Defines a list item within an unordered or ordered list.
+        </li>
+        <li>
+            <strong>&lt;div&gt;</strong> - A generic container for flow content, used for styling or grouping content.
+        </li>
+        <li>
+            <strong>&lt;span&gt;</strong> - A generic inline container for text, used for styling or grouping text within other elements.
+        </li>
+        <li>
+            <strong>&lt;form&gt;</strong> - Defines an HTML form for user input.
+        </li>
+        <li>
+            <strong>&lt;label&gt;</strong> - The &lt;label&gt; element is used to associate a text label with a form &lt;label&gt; field.
+        </li>
+        <li>
+            <strong>&lt;input&gt;</strong> - Defines an input field within a form. It is an empty element.
+        </li>
+        <li>
+            <strong>&lt;button&gt;</strong> - Represents a clickable button.
+        </li>
+    </ol>
+</body>
+</html>
+
+5. create a description list of full stack web development teck, using he <dl> tag. Each term should be a tech stack name and each description should be a brief explanation of what the tech stack is used for.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First Assignment of jawascript</title>
+</head>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML (HyperText Markup Language) is the standard markup language used for creating web pages. It provides the structure of a webpage.</dd>
+      
+        <dt>CSS</dt>
+        <dd>CSS (Cascading Style Sheets) is used for describing the presentation of a document written in HTML. It controls the layout, colors, and fonts.</dd>
+      
+        <dt>JavaScript</dt>
+        <dd>JavaScript is a programming language that allows you to implement complex features on web pages, including dynamic content, interactive forms, and animations.</dd>
+      
+        <dt>Node.js</dt>
+        <dd>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript on the server side to build scalable network applications.</dd>
+      
+        <dt>Express.js</dt>
+        <dd>Express.js is a web application framework for Node.js, designed for building web applications and APIs. It provides a robust set of features for web and mobile applications.</dd>
+      
+        <dt>React</dt>
+        <dd>React is a JavaScript library for building user interfaces, maintained by Facebook. It allows developers to create large web applications that can update and render efficiently in response to data changes.</dd>
+      
+        <dt>Angular</dt>
+        <dd>Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It provides a set of tools and libraries for building and scaling web applications.</dd>
+      
+        <dt>Vue.js</dt>
+        <dd>Vue.js is a progressive JavaScript framework for building user interfaces. It is designed to be incrementally adaptable, focusing on the view layer only.</dd>
+      
+        <dt>MongoDB</dt>
+        <dd>MongoDB is a NoSQL database that uses a document-oriented data model. It allows for the storage of JSON-like documents with dynamic schemas.</dd>
+        <dt>Git</dt>
+        <dd>Git is a distributed version control system that tracks changes in source code during software development. It allows multiple developers to work together on non-linear development.</dd>
+      
+        <dt>GitHub</dt>
+        <dd>GitHub is a web-based platform that uses Git for version control and provides tools for collaboration, such as issue tracking, code review, and project management.</dd>
+      </dl>
+      
+</body>
+</htm>
+
+6.Create an ordered list of the full stack web development tech stack Html, CSS, and Js. For each tech stack, create a table that lists the tech stack name, its primary use cases, and some key features or benefits.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Web Development Tech Stack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Full Stack Web Development Tech Stack</h1>
+
+    <ol>
+        <li>
+            <h2>HTML (HyperText Markup Language)</h2>
+            <table>
+                <tr>
+                    <th>Tech Stack Name</th>
+                    <th>Primary Use Cases</th>
+                    <th>Key Features/Benefits</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Structuring web content, creating web pages</td>
+                    <td>
+                        <ul>
+                            <li>Defines the structure of web pages using markup</li>
+                            <li>Supports multimedia elements like images and videos</li>
+                            <li>Establishes a hierarchy of elements with headings, paragraphs, etc.</li>
+                            <li>Provides the foundation for web accessibility</li>
+                            <li>Easy to learn and implement</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <h2>CSS (Cascading Style Sheets)</h2>
+            <table>
+                <tr>
+                    <th>Tech Stack Name</th>
+                    <th>Primary Use Cases</th>
+                    <th>Key Features/Benefits</th>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Styling web pages, layout control, responsive design</td>
+                    <td>
+                        <ul>
+                            <li>Controls the visual presentation of web content</li>
+                            <li>Supports responsive design for various screen sizes</li>
+                            <li>Enables separation of content and presentation</li>
+                            <li>Allows for reusable style definitions through classes and IDs</li>
+                            <li>Supports animations and transitions</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <h2>JavaScript</h2>
+            <table>
+                <tr>
+                    <th>Tech Stack Name</th>
+                    <th>Primary Use Cases</th>
+                    <th>Key Features/Benefits</th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Client-side scripting, dynamic content, interactivity</td>
+                    <td>
+                        <ul>
+                            <li>Enables dynamic and interactive web content</li>
+                            <li>Supports asynchronous operations through promises and async/await</li>
+                            <li>Can manipulate HTML and CSS to update web pages dynamically</li>
+                            <li>Extensive ecosystem with libraries and frameworks like React, Angular</li>
+                            <li>Compatible with all modern browsers</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+
+</body>
+</html>
+
+7. Build a complex nested list structure representing a multi-level table of contents. Use unordered lists (<ul>) and list items (<li>) with inline-block styling to create a structure layout. Apply fomatting tags to enhance the presentation of lst items.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Nested List Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        li {
+            display: inline-block;
+            padding: 5px 0;
+            position: relative;
+        }
+        li::before {
+            content: '•';
+            position: absolute;
+            left: -15px;
+            color: #333;
+        }
+        h2, h3, h4 {
+            margin: 10px 0;
+            color: #333;
+        }
+        li > ul {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li>
+            <h3>Chapter 1: Introduction</h3>
+            <ul>
+                <li>
+                    <h4>1.1 Overview</h4>
+                </li>
+                <li>
+                    <h4>1.2 Goals</h4>
+                    <ul>
+                        <li>1.2.1 Objective 1</li>
+                        <li>1.2.2 Objective 2</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>1.3 Structure</h4>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Chapter 2: HTML Basics</h3>
+            <ul>
+                <li>
+                    <h4>2.1 Elements</h4>
+                    <ul>
+                        <li>2.1.1 Paragraphs</li>
+                        <li>2.1.2 Headings</li>
+                        <li>2.1.3 Lists</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>2.2 Attributes</h4>
+                </li>
+                <li>
+                    <h4>2.3 Forms</h4>
+                    <ul>
+                        <li>2.3.1 Input Types</li>
+                        <li>2.3.2 Validation</li>
+                        <li>2.3.3 Required </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Chapter 3: CSS Styling</h3>
+            <ul>
+                <li>
+                    <h4>3.1 Selectors</h4>
+                    <ul>
+                        <li>3.1.1 Class Selectors</li>
+                        <li>3.1.2 ID Selectors</li>
+                        <li>3.1.3 pseudo class </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3.2 Box Model</h4>
+                    <ul>
+                        <li>3.2.1 Margins</li>
+                        <li>3.2.2 Padding</li>
+                        <li>3.2.3 Borders</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3.3 Flexbox</h4>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Chapter 4: JavaScript Fundamentals</h3>
+            <ul>
+                <li>
+                    <h4>4.1 Variables</h4>
+                </li>
+                <li>
+                    <h4>4.2 Functions</h4>
+                    <ul>
+                        <li>4.2.1 Function Declarations</li>
+                        <li>4.2.2 Function Expressions</li>
+                        <li>4.3.3 function asynchronous </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>4.3 Events</h4>
+                    <ul>
+                        <li>4.3.1 Event Listeners</li>
+                        <li>4.3.2 Event Bubbling</li>
+                        <li>4.3.3 Event delegation<li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
+
+8. Create a table to display a conference shedule. Each row corresponds to a time slot, and each column corressponds to a room. Some time slots might have multiple sessions running simultaneously in different rooms. Utilize rowspan and colspan attributes as necessary to accommodate this complex shedule.(use table attribute "cellpadding" to give extra padding in each table cell).
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            cellpadding: 10;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Conference Schedule</h2>
+    <table cellpadding="10">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Room A</th>
+                <th>Room B</th>
+                <th>Room C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td colspan="3">Keynote Address</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>Session A1</td>
+                <td>Session B1</td>
+                <td rowspan="2">Workshop C1</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>Session A2</td>
+                <td>Session B2</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:00</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>13:00 - 14:00</td>
+                <td rowspan="2">Workshop A2</td>
+                <td>Session B3</td>
+                <td>Session C2</td>
+            </tr>
+            <tr>
+                <td>14:00 - 15:00</td>
+                <td>Session B4</td>
+                <td>Session C3</td>
+            </tr>
+            <tr>
+                <td>15:00 - 16:00</td>
+                <td>Session A3</td>
+                <td colspan="2">Panel Discussion</td>
+            </tr>
+            <tr>
+                <td>16:00 - 17:00</td>
+                <td>Session A4</td>
+                <td>Session B5</td>
+                <td>Session C4</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+           Media and Forms
+
+1. Create an image gallery that holds muliple images.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="image5.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="image6.jpg" alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="image7.jpg" alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="image8.jpg" alt="Image 8">
+        </div>
+    </div>
+</body>
+</html>
+
+2. Use video and audio tags to display video and audio with the playback, audio control
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Example</title>
+</head>
+<body>
+    <h1>Video Example</h1>
+    <video width="640" height="360" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>The audio element</h1>
+
+<p>Click on the play button to play a sound:</p>
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    
+</body>
+</html>
+
+
+3. Modify the previous assignment so that the audio and video play automatically as the page is loaded and they should play infinitely.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Example</title>
+</head>
+<body>
+    <h1>Video Example</h1>
+    <video width="640" height="360" controls autoplay loop >
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>The audio element</h1>
+
+<p>Click on the play button to play a sound:</p>
+
+<audio controls autoplay loops>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    
+</body>
+</html>
+
+4. Use iframe to embed the PhysicsWallah Wikipedia page properly
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysicsWallah Wikipedia</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>PhysicsWallah Wikipedia Page</h1>
+    <iframe src="https://en.wikipedia.org/wiki/PhysicsWallah" title="PhysicsWallah Wikipedia Page"></iframe>
+</body>
+</html>
+
+5. Create a sign-up and sign-in form with proper Validation
+a. Sign up form should have a first name, last name, email, password, confirm password, age, gender, and agree to terms and conditions fields at minimum (you can add any other if you like)
+b. Sign in form should have email, password fields
+Note: Validation is a must.
+Ex: First name, last name, email cannot be less than 3 charracters, age cannot be negative and cannot be greater than 150, fields are required, etc...,
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up and Sign-In Forms</title>
+    <style>
+        form {
+            margin: 20px;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign-Up Form</h1>
+    <form id="signup-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required minlength="3">
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required minlength="3">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="0" max="150">
+        
+        <label>Gender:</label>
+        <div class="form-container">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="other" required> Other</label>
+        </div>
+        
+        <label>
+            <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions
+        </label>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <h1>Sign-In Form</h1>
+    <form id="signin-form">
+        <label for="signin-email">Email:</label>
+        <input type="email" id="signin-email" name="signin-email" required>
+        
+        <label for="signin-password">Password:</label>
+        <input type="password" id="signin-password" name="signin-password" required minlength="6">
+        
+        <button type="submit">Sign In</button>
+    </form>
+</body>
+</html>
+
+
+          Starting With CSS
+
+1.Create a simple page with some div tags and show different ways to add CSS as well as what happens when you target the same elements with inline, itnernal, and external CSS. also utilize comments in the project where required.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Priority Example</title>
+    <!-- Internal CSS -->
+    <style>
+        /* This is an internal CSS block */
+        .example-div {
+            background-color: lightblue; /* This will be overridden by external CSS */
+            color: black; /* This will be overridden by inline CSS */
+            border: 2px solid black;
+        }
+    </style>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Inline CSS -->
+    <div class="example-div" style="color: red;">
+        This is a div with inline CSS.
+    </div>
+    <div class="example-div">
+        This is a div without inline CSS.
+    </div>
+</body>
+</html>
+
+/* This is an external CSS file */
+.example-div {
+    background-color: lightgreen; /* This will override internal CSS */
+    padding: 20px;
+    margin: 10px;
+}
+ 
+2. Build an HTML page with multiple paragraphs, each assigned a unique class name. Write CSS rules using class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and explain how you've names the classes.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Naming Convention Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <p class="content__paragraph content__paragraph--primary">This is the primary paragraph.</p>
+        <p class="content__paragraph content__paragraph--secondary">This is the secondary paragraph.</p>
+        <p class="content__paragraph content__paragraph--highlighted">This is the highlighted paragraph.</p>
+        <p class="content__paragraph content__paragraph--muted">This is the muted paragraph.</p>
+    </div>
+</body>
+</html>
+
+/* Base block styles */
+.content {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Element styles */
+.content__paragraph {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Modifier styles */
+.content__paragraph--primary {
+    color: white;
+    background-color: blue;
+}
+
+.content__paragraph--secondary {
+    color: white;
+    background-color: green;
+}
+
+.content__paragraph--highlighted {
+    color: black;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.content__paragraph--muted {
+    color: gray;
+    background-color: lightgray;
+}
+
+3. Develop an HTML form with various input elements. Use CSS to style the form, including setting background colors for input fields. Create a custom color palette for the form elements, and demonstrate how to apply opacity to one of the form sections
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <h2 class="heading">Contact Us</h2>
+            
+            <div class="form-section form-section--primary">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input">
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input">
+
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+
+            <div class="form-section form-section--secondary">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-textarea"></textarea>
+            </div>
+
+            <div class="form-section form-section--tertiary">
+                <label for="gender" class="form-label">Gender:</label>
+                <select id="gender" name="gender" class="form-select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label class="form-label">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe" class="form-checkbox">
+                <label for="subscribe" class="form-checkbox-label">Yes, subscribe me</label>
+            </div>
+
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+/* Custom color palette */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --tertiary-color: #FFC107;
+    --background-color: #f0f0f0;
+    --input-background-color: #ffffff;
+    --input-border-color: #cccccc;
+    --button-color: #4CAF50;
+    --button-hover-color: #45a049;
+}
+
+/* General form styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.heading {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+/* Apply opacity to the secondary section */
+.form-section--secondary {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 5px;
+    opacity: 0.9; /* Applying opacity */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 7px;
+    background-color: var(--input-background-color);
+}
+
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-checkbox-label {
+    margin-left: 5px;
+    color: var(--primary-color);
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--button-color);
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+         More on CSS
+
+1.Creating a navigation bar similar to the below-mention image. The navigatioon bar must contain 5 navigation links that are properly placed within the navigation bar using the CSS box model. The navigation items must change their text color on hover.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Services</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Portfolio</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+/* Custom color palette */
+:root {
+    --navbar-bg-color: #333;
+    --navbar-link-color: #fff;
+    --navbar-link-hover-color: #ff6347;
+    --navbar-link-padding: 15px 20px;
+}
+
+/* Navigation bar styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+    padding: 10px 0;
+}
+
+.navbar__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__item {
+    margin: 0;
+}
+
+.navbar__link {
+    display: block;
+    color: var(--navbar-link-color);
+    text-decoration: none;
+    padding: var(--navbar-link-padding);
+    transition: color 0.3s;
+}
+
+/* Hover effect */
+.navbar__link:hover {
+    color: var(--navbar-link-hover-color);
+}
+
+2. Create a div centered with an image and paragraph similar to the image mention below.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centered image and paragraph</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="div-container">
+        <img src="example-image.jpg" alt="Example Image" class="div-image">
+        <p class="div-paragraph">This is a centered paragraph below the image.</p>
+    </div>
+</body>
+</html>
+
+/* General styles */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Centered container styles */
+.div-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Image styles */
+.div-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Paragraph styles */
+.div-paragraph {
+    margin: 0;
+    color: #333;
+}
+
+3. Create a navigation bar similar to qustion1. For each navigation item, use a different border style.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#" class="navbar__link navbar__link--primary">Home</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link navbar__link--secondary">About</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link navbar__link--third">Services</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link navbar__link--four">Portfolio</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link navbar__link--five">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+* Custom color palette */
+:root {
+    --navbar-bg-color: #333;
+    --navbar-link-color: #fff;
+    --navbar-link-hover-color: #ff6347;
+    --navbar-link-padding: 15px 20px;
+}
+
+/* Navigation bar styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+    padding: 10px 0;
+}
+
+.navbar__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__item {
+    margin: 0;
+}
+
+.navbar__link {
+    display: block;
+    color: var(--navbar-link-color);
+    text-decoration: none;
+    padding: var(--navbar-link-padding);
+    transition: color 0.3s;
+}
+
+.navbar__link--primary {
+    border: 2px solid black;
+}
+
+.navbar__link--secondary {
+    border: 2px solid lightblue;
+}
+
+.navbar__link--third {
+    border: 2px solid lightgreen;
+}
+
+.navbar__link--four {
+    border: 2px solid red;
+}
+
+.navbar__link--five {
+    border: 2px solid yellow;
+}
+
+/* Hover effect */
+.navbar__link:hover {
+    color: var(--navbar-link-hover-color);
+}
+
+4. Create a simple webpage with an image and make the image circular using border-radius.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Image </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="image1.png" class="first-image">
+    </div>
+</body>
+</html>
+
+/* General styles */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+.image-container {
+    text-align: center;
+}
+
+.first-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover;
+}
+
+5. Create a simple blog website about Google fonts. The webpage must have the heading with "Oswald" font align center to the page, below the heading have an image of Google fonts and a paragraph about Google fonts in "Montserrat" paragraph font style should be "Montserrat" font.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fonts Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Oswald:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <h1 class="heading">Google Fonts</h1>
+        <img src="https://fonts.google.com/images/google-fonts-logo.svg" alt="Google Fonts Logo" class="image">
+        
+        <p class="paragraph">Google Fonts is a library of 2,000+ free licensed font families and APIs for conveniently using the fonts via CSS and Android. The library also has beautifully crafted icons for common actions and items. The Google Fonts API makes it easy to bring the power of great typography to your website.</p>
+    </div>
+</body>
+</html>
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.content {
+    text-align: center;
+    padding: 23px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #333;
+}
+
+6. Create a simple website as mentioned in the below image. You can get the assets by visiting https:/pwskills.com/about-us.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PW Skills</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PW Skills</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https:/pwskills.com/about-us">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>PW Skills is providing a lot of course in programming.Whatever you want to choose you can do. pwskills has full stack development course as well as data scientist and AI related .</p>
+            <p>Any stream people can do  this course he will get all facility related industrial project</p>
+            <p> To know about for information you can click our About Us page.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PW Skills. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+7. Create a simple webpage with a card similar to question number2. The card must be semi-transparent as default and on hovering the card must be displayed clearly. Use CSS opacity to achieve this output.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centered image and paragraph</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div-container">
+        <img src="tower.png" alt="tower Image" class="div-image">
+        <p class="div-paragraph">This is a centered paragraph below the image.</p>
+    </div>
+</body>
+</html>
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Centered container styles */
+.div-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(80, 77, 77);
+    border-radius: 5px;
+}
+
+/* Image styles */
+.div-image {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+  /*Image hovering*? 
+.div-image:hover{
+    opacity: 0.5;
+}
+
+/* Paragraph styles */
+.div-paragraph {
+    margin: 0;
+    color: #333;
+}
+
+8. Create a simple list of items as mentioned in the below image.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of items</title>
+</head>
+<body>
+    <h1>Requirements</h1>
+    <ol type="i">
+        <li>System with minimum i3 processor or better.</li>
+        <li>At least 4 GB of RAM.</li>
+        <li>Working internet connection.</li>
+        <li>Dedication to learn</li>
+    </ol>
+</body>
+</html>
+
+                  Position in CSS
+
+Write code to position 5 equal-sized boxes A, B, C, D, and E as follows,
+a. box A 200px from the left, and 200px from the top of the viewport.
+b. Box B -30px left, and -30px above from the center of box A.
+c. Box B -30px right, and -30px above from the center of box A.
+d. Box B -30px left, and -30px below from the center of box A.
+e. Box B -30px right, and -30px below from the center of box A.
