@@ -1602,9 +1602,200 @@ Answer:
 
                   Position in CSS
 
-Write code to position 5 equal-sized boxes A, B, C, D, and E as follows,
+Write code to position 5 equal-sized(50 * 50px) boxes A, B, C, D, and E as follows,
 a. box A 200px from the left, and 200px from the top of the viewport.
 b. Box B -30px left, and -30px above from the center of box A.
-c. Box B -30px right, and -30px above from the center of box A.
-d. Box B -30px left, and -30px below from the center of box A.
-e. Box B -30px right, and -30px below from the center of box A.
+c. Box C -30px right, and -30px above from the center of box A.
+d. Box D -30px left, and -30px below from the center of box A.
+e. Box E -30px right, and -30px below from the center of box A.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Positioning</title>
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+
+        #boxA {
+            left: 200px;
+            top: 200px;
+            background-color: rgb(255, 128, 0);
+            z-index: 1;
+            text-align: center;
+
+        }
+        #boxB {
+            left: calc(200px - 30px);
+            top: calc(200px - 30px);
+            background-color: green;
+        }
+
+        #boxC {
+            left: calc(200px + 30px);
+            top: calc(200px - 30px);
+            background-color: blue;
+        }
+
+        #boxD {
+            left: calc(200px - 30px);
+            top: calc(200px + 30px);
+            background-color: yellow;
+        }
+
+        #boxE {
+            left: calc(200px + 30px);
+            top: calc(200px + 30px);
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="boxA" class="box">A</div>
+    <div id="boxB" class="box">B</div>
+    <div id="boxC" class="box">C</div>
+    <div id="boxD" class="box">D</div>
+    <div id="boxE" class="box">E</div>
+</body>
+</html>
+
+2. Explain the difference between Absolute and Relative positioning.
+
+Answer:
+Absolute: Positioned relative to the nearest positioned ancestor or the viewport.
+Relative: Positioned relative to its normal position in the document flow.
+
+3.Create a card as shown in the  picture below.(You can use CSS float property only for layout).
+
+answer:
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cart">
+    <img src="tower.png" alt="tower example" class="tower-image">
+    <p class="paragraph">
+      this is one of the highest tower in the world. here you can go and watch. various country people go and feel good wathing this.
+    </p>
+  </div>
+</body>
+</html>
+
+/* Container for the cart */
+.cart {
+    width: 600px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px;
+    overflow: hidden; 
+  }
+  
+  /* Image styling */
+  .tower-image {
+    float: right; 
+    margin-right: 10px;
+    width: 50%; 
+    height: 50%;
+  }
+  
+  /* Paragraph styling */
+  .paragraph {
+    text-align: center;
+    padding-right: 13px;
+  }
+
+4. Create a simple header that sticks to the top of a webpage upon scrolling.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 7px 9px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .content {
+            padding: 80px 20px; /* Add top padding to prevent content from being hidden under the header */
+        }
+        .header h1 {
+            margin: 0;
+        }
+        ul{
+           margin:5px;
+           width:100%;
+           padding:13px; 
+        }
+        li{
+            text-decoration: none;
+            color:antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>ABout </li>
+                <li>Content</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </div>
+    <div class="Paragraph-1">
+        <h1>Paragraph-1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        <p>Donec ultricies, orci sit amet imperdiet mattis, risus nunc pellentesque magna, eget facilisis libero justo in lectus. Sed vehicula ipsum quis lacus facilisis, at commodo erat efficitur. Nullam ac justo euismod, ultricies felis ac, laoreet dolor. Quisque malesuada, dui id gravida bibendum, metus sapien aliquet odio, nec ultricies odio risus et odio. Nulla facilisi.</p>
+        <p>Mauris viverra purus id purus fringilla, nec tincidunt urna sollicitudin. Sed euismod orci erat, id fermentum dui malesuada a. Nam quis lorem et libero aliquet tincidunt. Nulla facilisi. Proin ac tellus sed lectus ultricies facilisis nec non orci. Donec malesuada felis eros, non vehicula nunc facilisis in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sed ex nec dui feugiat vehicula. Quisque condimentum dui vitae tortor accumsan dignissim.</p>
+        <p>Nam consectetur elit eu sem luctus, ac facilisis eros dignissim. Morbi sodales ligula et dui convallis, a bibendum orci fermentum. Praesent nec libero vel libero consectetur vehicula. Pellentesque imperdiet tincidunt sapien, in mollis nisi bibendum ut. Curabitur ut mi a libero blandit fermentum. Donec euismod sem et libero tristique, at gravida elit efficitur. In a neque sit amet dolor sollicitudin convallis.</p>
+        <p>Sed sit amet felis nec metus convallis viverra. Nulla facilisi. Aliquam erat volutpat. Etiam vestibulum velit id venenatis facilisis. Sed sollicitudin augue a gravida tincidunt. Sed ultricies nisi at malesuada iaculis. Fusce a felis sed turpis tempor elementum. Sed at justo nec justo accumsan accumsan.</p>
+    </div>
+    <div class="Paragraph-2">
+        <h1>Paragraph-2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        <p>Donec ultricies, orci sit amet imperdiet mattis, risus nunc pellentesque magna, eget facilisis libero justo in lectus. Sed vehicula ipsum quis lacus facilisis, at commodo erat efficitur. Nullam ac justo euismod, ultricies felis ac, laoreet dolor. Quisque malesuada, dui id gravida bibendum, metus sapien aliquet odio, nec ultricies odio risus et odio. Nulla facilisi.</p>
+        <p>Mauris viverra purus id purus fringilla, nec tincidunt urna sollicitudin. Sed euismod orci erat, id fermentum dui malesuada a. Nam quis lorem et libero aliquet tincidunt. Nulla facilisi. Proin ac tellus sed lectus ultricies facilisis nec non orci. Donec malesuada felis eros, non vehicula nunc facilisis in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sed ex nec dui feugiat vehicula. Quisque condimentum dui vitae tortor accumsan dignissim.</p>
+        <p>Nam consectetur elit eu sem luctus, ac facilisis eros dignissim. Morbi sodales ligula et dui convallis, a bibendum orci fermentum. Praesent nec libero vel libero consectetur vehicula. Pellentesque imperdiet tincidunt sapien, in mollis nisi bibendum ut. Curabitur ut mi a libero blandit fermentum. Donec euismod sem et libero tristique, at gravida elit efficitur. In a neque sit amet dolor sollicitudin convallis.</p>
+        <p>Sed sit amet felis nec metus convallis viverra. Nulla facilisi. Aliquam erat volutpat. Etiam vestibulum velit id venenatis facilisis. Sed sollicitudin augue a gravida tincidunt. Sed ultricies nisi at malesuada iaculis. Fusce a felis sed turpis tempor elementum. Sed at justo nec justo accumsan accumsan.</p>
+    </div>
+    <div class="Paragraph-3">
+        <h1>Paragraph-3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        <p>Donec ultricies, orci sit amet imperdiet mattis, risus nunc pellentesque magna, eget facilisis libero justo in lectus. Sed vehicula ipsum quis lacus facilisis, at commodo erat efficitur. Nullam ac justo euismod, ultricies felis ac, laoreet dolor. Quisque malesuada, dui id gravida bibendum, metus sapien aliquet odio, nec ultricies odio risus et odio. Nulla facilisi.</p>
+        <p>Mauris viverra purus id purus fringilla, nec tincidunt urna sollicitudin. Sed euismod orci erat, id fermentum dui malesuada a. Nam quis lorem et libero aliquet tincidunt. Nulla facilisi. Proin ac tellus sed lectus ultricies facilisis nec non orci. Donec malesuada felis eros, non vehicula nunc facilisis in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sed ex nec dui feugiat vehicula. Quisque condimentum dui vitae tortor accumsan dignissim.</p>
+        <p>Nam consectetur elit eu sem luctus, ac facilisis eros dignissim. Morbi sodales ligula et dui convallis, a bibendum orci fermentum. Praesent nec libero vel libero consectetur vehicula. Pellentesque imperdiet tincidunt sapien, in mollis nisi bibendum ut. Curabitur ut mi a libero blandit fermentum. Donec euismod sem et libero tristique, at gravida elit efficitur. In a neque sit amet dolor sollicitudin convallis.</p>
+        <p>Sed sit amet felis nec metus convallis viverra. Nulla facilisi. Aliquam erat volutpat. Etiam vestibulum velit id venenatis facilisis. Sed sollicitudin augue a gravida tincidunt. Sed ultricies nisi at malesuada iaculis. Fusce a felis sed turpis tempor elementum. Sed at justo nec justo accumsan accumsan.</p>
+    </div>
+</body>
+</html>
+
+6. Explain the z-index, with a code example.
+
+Answer:
+The z-index property in CSS is used to determine the stacking order of elements on a web page. Elements with a higher z-index value will be placed in front of elements with a lower z-index value. It only works on positioned elements.
+
+           
