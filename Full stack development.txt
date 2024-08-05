@@ -1799,3 +1799,570 @@ Answer:
 The z-index property in CSS is used to determine the stacking order of elements on a web page. Elements with a higher z-index value will be placed in front of elements with a lower z-index value. It only works on positioned elements.
 
            
+                 Flexbox in CSS
+
+1. Describe the main difference between the CSS Flexbox layout model and the CSS Grid layout When would you choose to use one over the other?
+
+Answer:
+Flexbox: Choose Flexbox when you need to control the layout of items in one dimension (either a row or a column) and you need flexibility for items of varying sizes. It is also preferable for simpler, less complex layouts.
+
+Grid: Choose Grid when you need to manage both rows and columns simultaneously and require a more comprehensive layout solution. Grid is suitable for more complex and larger-scale designs where the layout involves multiple rows and columns.
+
+2.Explain the role of the following key properties in the Flexbox layout mode
+
+1. justify-content
+2. aling-item
+3. gap 
+4. Flex-direction 
+5. flex-wrap
+
+Answer:
+1.justify-content
+
+Role: This property aligns the flex items along the main axis (which is horizontal by default). It distributes the extra space when the items do not take up all the available space.
+
+2. align-items
+
+Role: This property aligns the flex items along the cross axis (which is vertical by default). It sets the default alignment for all items inside the flex container.
+
+3. gap
+
+Role: This property defines the space between the flex items. It is used to create consistent spacing between items without using margins.
+
+4. flex-direction
+
+Role: This property defines the direction in which the flex items are placed in the flex container.
+
+5. flex-wrap
+
+Role: This property controls whether the flex items should wrap onto multiple lines or stay on a single line.
+
+
+Q3. Write the code to center a div using CSS Flexbox.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center a Div</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="centered-div">Centered Content</div>
+    </div>
+</body>
+</html>
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.centered-div {
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid #000;
+}
+
+
+4. A client of yours wants to add a pricing section on their website to showcase their newly introduced premium palns. You have to build the pricing section for their business. They have provided you with the figma design for the same.link
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="pricing">
+        <h1>Our plans</h1>
+        <div class="pricing-cards">
+            <div class="card">
+            <h1>Free Plan<h1>
+                <h2>For personal</h2>
+                <p class="price">$0<span>/month</span></p>
+                <ul>
+                    <li>1 users</li>
+                    <li>4 Web mails</li>
+                    <li>Response Website</li>
+                    <li> Free SSl </li>
+                </ul>
+                <button>Subscribe now</button>
+            </div>
+            <div class="card popular">
+            <h1> Basic Plan </h2>
+                <h2>For small buisiness</h2>
+                <p class="price">$29<span>/month</span></p>
+                <ul>
+                    <li>4 users</li>
+                    <li>10 Web mails</li>
+                    <li>Responsive Website</li>
+                    <li>Free SSL</li>
+                </ul>
+            <button>Choose Subscribe now</button>
+            </div>
+            <div class="card">
+             <h1>Pro Plan </h2>
+                <h2>For enterprise</h2>
+                <p class="price">$49<span>/month</span></p>
+                <ul>
+                    <li>Unlimited Users</li>
+                    <li>Unlimited Web mails</li>
+                    <li>Responsive Website</li>
+                    <li>Free SSL + SEO</li>
+                </ul>
+                <button>Subscribe now</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.pricing h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 0.5em;
+    color: #777777;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.popular {
+    border: 2px solid #007BFF;
+}
+
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+Q5. build a clone of the IRCTC Ticket booking page
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IRCTC Ticket Booking</h1>
+    </header>
+    <main>
+        <form id="searchForm">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Search Trains</button>
+        </form>
+        <div id="results"></div>
+    </main>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+          Grid in CSS
+
+
+1. Create an image gallery uisng a CSS grid.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item"><img src="image1.jpg" alt="Image 1"></div>
+        <div class="gallery-item"><img src="image2.jpg" alt="Image 2"></div>
+        <div class="gallery-item"><img src="image3.jpg" alt="Image 3"></div>
+        <div class="gallery-item"><img src="image4.jpg" alt="Image 4"></div>
+        <div class="gallery-item"><img src="image5.jpg" alt="Image 5"></div>
+        <div class="gallery-item"><img src="image6.jpg" alt="Image 6"></div>
+    </div>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+2. Write code to arrange containers with texts A,B,C and D as shown in the below image.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item grid-item1" >A</div>
+        <div class="grid-item grid-item2">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+    </div>
+</body>
+</html>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+}
+
+.grid-item1{
+  grid-column-end: span 2;
+}
+.grid-item2{
+  grid-row: 2/span 2;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+3. Explain the use of grid-auto-row and grid-auto-column using code example.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Auto Rows and Columns Example</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 100px;
+            grid-auto-rows: 50px;
+            grid-auto-columns: 50px;
+            gap: 10px;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+    </div>
+</body>
+</html>
+
+4. Write CSS to show numbers as shown in the figure, without altering the html file.
+
+without changing the html
+/* Initialize the counter */
+body {
+    counter-reset: section;
+}
+
+/* Style for numbered items */
+.numbered-item::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+    font-weight: bold; /* or any other styling you prefer */
+}
+
+/* Example styling for the items */
+.numbered-item {
+    margin: 10px 0;
+}
+
+Here is an example of how you would apply this CSS to a list of items:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbered Items</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul>
+        <li class="numbered-item">Item 1</li>
+        <li class="numbered-item">Item 2</li>
+        <li class="numbered-item">Item 3</li>
+        <li class="numbered-item">Item 4</li>
+    </ul>
+</body>
+</html>
+
+
+5. Explain the differnce between justify-items and justify-self using code examples.
+
+answer:
+justify-items :
+aligns all the items in a grid container along the row axis.
+
+justify-self:
+ aligns a specific grid item along the row axis.
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Items</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            gap: 10px;
+            border: 1px solid #000;
+        }
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+        <div class="grid-item">Item 7</div>
+        <div class="grid-item">Item 8</div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Self</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            border: 1px solid #000;
+        }
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        .grid-item.special {
+            justify-self: end; /* Aligns this specific item to the end */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item special">Special Item</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+        <div class="grid-item">Item 7</div>
+        <div class="grid-item">Item 8</div>
+    </div>
+</body>
+</html>
