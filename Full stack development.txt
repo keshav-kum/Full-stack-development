@@ -2366,3 +2366,378 @@ justify-self:
     </div>
 </body>
 </html>
+
+
+             Responsive design
+
+1. Create a simple webpage with header, a main content section, and a footer. Apply a media query that changes the background color of the header to blue when the screen width is less than 600px.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Header Section</h1>
+    </header>
+    <main>
+        <p>This is the main content section.</p>
+    </main>
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        background-color: blue;
+    }
+}
+
+2. Create an image gallery with three images in a row. Use media queries to adjust the layout to two images in a row for screens smaller than 800px and one image in a row for screens smaller than 500px.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item"><img src="tower.png" alt="Image 1"></div>
+            <div class="gallery-item"><img src="tower.png" alt="Image 2"></div>
+            <div class="gallery-item"><img src="tower.png" alt="Image 3"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(33.33% - 10px);
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .gallery-item {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: calc(50% - 10px);
+
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-item {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+ 
+    }
+}
+
+3. Create a navigation bar with five links. Apply a media query that converts the navigation into a vertical list for screens smaller than 768px and also changes the background color to gray.
+
+Answer: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Bar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#home">Home</a></li>
+      <li class="nav-item"><a href="#about">About</a></li>
+      <li class="nav-item"><a href="#services">Services</a></li>
+      <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+      <li class="nav-item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    background-color: gray;
+  }
+
+  .nav-item a {
+    text-align: left;
+    padding: 10px;
+  }
+}
+
+4.Create a grid-based layout containing four grid items which arranges them as the screen size changes.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+  </div>
+</body>
+</html>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.grid-item {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.grid-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+5. Create the below-given layout using the flexbox in CSS, which should adapt itself on a mobile screen as per the given below output.
+
+Answer:
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item flex-item-1">Box 1</div>
+        <div class=" flex-item flex-column">
+            <div class="flex-item-2">Box 2</div>
+            <div class="flex-item-3">Box 3</div>
+        </div>
+        <div class="flex-item flex-item-4">Box 4</div>
+    </div>
+</body>
+
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    /* flex-wrap: wrap;  */
+    height: 100vh;
+}
+
+.flex-item {
+    display: flex;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    background-color: black;
+    flex: 1 1 10%;
+    color: white;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.flex-column {
+    flex-direction: column;
+    flex: 1 1 80%;
+    text-align: center;
+
+}
+
+
+.flex-item-2 {
+    background-color: aqua;
+    color: white;
+    height: 50%;
+
+
+}
+
+.flex-item-3 {
+    background-color: orange;
+    color: white;
+    height: 50%;
+
+}
+
+.flex-item-4 {
+    background-color: black;
+    height: 100%;
+    color: white;
+    /* flex-basis: 10%; */
+    flex: 1 1 10%;
+    justify-content: center;
+}
+
+@media (max-width: 770px) {
+    .flex-container {
+        flex-direction: column;
+        height:fit-content
+    }
+
+    .flex-item-4{
+        margin-top:500px;
+    }
+
+
+}
