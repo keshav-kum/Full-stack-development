@@ -2819,3 +2819,1043 @@ module.exports = {
   </body>
 </html>
 
+
+
+2. Create a responsive images gallery using Tailwind CSS. The gallery should display a grid of images that adjust their size and layout based on the screen size.
+
+Answer:
+1. Set up Vite Project:
+npm create vite@latest my-login-page --template vanilla
+cd my-login-page
+npm install
+
+2. Install Tailwind CSS:
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+3. Configure Tailwind CSS:
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+4. Create the Tailwind CSS File:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+ 5. Include the Tailwind CSS File:
+ import './styles.css'
+
+6. Create the html file:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-8">Responsive Image Gallery</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div class="relative overflow-hidden bg-gray-300">
+                <img src="image1.png" alt="Gallery Image" class="w-full h-full object-cover">
+            </div>
+            <div class="relative overflow-hidden bg-gray-300">
+                <img src="image2.png" alt="Gallery Image" class="w-full h-full object-cover">
+            </div>
+            <div class="relative overflow-hidden bg-gray-300">
+                <img src="image3.png" alt="Gallery Image" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+3. Create a non-responsive dashboard using Tailwind CSS, where the dashboards should include a sidebar navigation menu and a main contain area.(Making it responsive is optional) feel free to use any icons from any place, Your  goal is to design a visually appealing and user-friendly dashboard interface that is not responsive.
+
+Answer:
+Set up Vite Project:
+npm create vite@latest my-login-page --template vanilla
+cd my-login-page
+npm install
+
+2. Install Tailwind CSS:
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+3. Configure Tailwind CSS:
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+4. Create the Tailwind CSS File:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+ 5. Include the Tailwind CSS File:
+ import './styles.css'
+
+6. Create the html file:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- https://jsfiddle.net/ufhar56d/32/ -->
+
+    <div class="flex min-h-[100vh] flex-no-wrap">
+
+        <!-- Side bar -->
+        <div class="w-64 bg-gray-800 hidden md:block">
+            <!-- Dashboard text wrapper -->
+            <div class="flex justify-center items-center h-20 bg-gray-900">
+                <h1 class="text-white text-2xl">Dashboard</h1>
+            </div>
+
+            <nav class="mt-10">
+                <a href="#" class="flex mt-4 items-center py-2 px-6 bg-gray-700 text-gray-100 hover:text-gray-400">
+                    <span class="mx-3">Home</span>
+                </a>
+                <a href="#" class="flex mt-4 items-center py-2 px-6 hover:bg-gray-700 text-gray-100 hover:text-gray-400">
+                    <span class="mx-3">Analytics</span>
+                </a>
+                <a href="#" class="flex mt-4 items-center py-2 px-6 hover:bg-gray-700 text-gray-100 hover:text-gray-400">
+                    <span class="mx-3">Sales</span>
+                </a>
+                <a href="#" class="flex mt-4 items-center py-2 px-6 hover:bg-gray-700 text-gray-100 hover:text-gray-400">
+                    <span class="mx-3">Messages</span>
+                </a>
+            </nav>
+
+        </div>
+
+        <!-- main content -->
+        <div class="flex flex-col w-full">
+            <!-- navbar -->
+            <header class="flex items-center bg-white px-4 h-16">
+                <!-- Sidebar button -->
+                <button class="md:hidden py-2 border rounded-md text-gray-600 border-gray-300">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18H10" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 12L16 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+
+                <div class="ml-auto flex items-center">
+                    <button class="flex items-center px-4 py-2 border rounded-md text-gray-600 border-gray-300">
+                        <span class="mr-2">Sign out</span>
+                    </button>
+                </div>
+            </header>
+
+
+            <!-- content -->
+
+            <main class="p-4 md:p-6">
+                <!-- card wrapper -->
+                <div class="flex flex-wrap gap-5">
+                    <!-- card 1 -->
+                    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg min-w-[40%] transition-shadow duration-300 ease-in-out hover:shadow-none">
+                        <h3 class="text-xl font-semibold mb-4">Revenue</h3>
+                        <p class="text-gray-600 text-3xl">$12,000</p>
+                    </div>
+                    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg min-w-[40%] transition-shadow duration-300 ease-in-out hover:shadow-none">
+                        <h3 class="text-xl font-semibold mb-4">Users</h3>
+                        <p class="text-gray-600 text-3xl">5000</p>
+                    </div>
+                    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg min-w-[40%] transition-shadow duration-300 ease-in-out hover:shadow-none">
+                        <h3 class="text-xl font-semibold mb-4">Sales</h3>
+                        <p class="text-gray-600 text-3xl">4512</p>
+                    </div>
+
+                </div>
+
+
+                <div class="mt-8">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-xl font-semibold text-gray-700">Recent activities</h2>
+                        <button class="py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700">View All</button>
+                    </div>
+
+
+                    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg mt-4 overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="text-left border-b">
+                                    <th class="py-2">Date</th>
+                                    <th class="py-2">Activity</th>
+                                    <th class="py-2">Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="py-2">01/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-2">01/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-2">01/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-yellow-600">Pending</td>
+
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-2">01/01/2024</td>
+                                    <td class="py-2">Logged In</td>
+                                    <td class="py-2 text-green-600">Completed</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg h-64 mt-8">
+                        <h3 class="text-cl font-semibold mb-4">Activity feed</h3>
+
+                        <div class="overflow-y-scroll h-[80%]">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                                    JD
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold">John Dow</p>
+                                    <p class="text-gray-600">Logged In</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white">
+                                    JD
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold">John Dow</p>
+                                    <p class="text-gray-600">Logged In</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white">
+                                    JD
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold">John Dow</p>
+                                    <p class="text-gray-600">Logged In</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                                    JD
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold">John Dow</p>
+                                    <p class="text-gray-600">Logged In</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                                    JD
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold">John Dow</p>
+                                    <p class="text-gray-600">Logged In</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                                    JD
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold">John Dow</p>
+                                    <p class="text-gray-600">Logged In</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                                    JD
+                                </div>
+                                <div class="ml-4">
+                                    <p class="font-semibold">John Dow</p>
+                                    <p class="text-gray-600">Logged In</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add a footer -->
+                <footer class="h-15 bg-violet-600 flex items-center justify-center text-md">@criptodashboard</footer>
+            </main>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+                core jawascript 1
+
+
+
+
+Q2. Write a program that grades students based on their Marks
+.If greater than 70 then A Grade.
+.if between 70 and 90 then B grade
+.if between 50 and 70 then a C grade
+Below 50 then an F grade
+
+Answer:
+const marks = 75;
+let grade;
+
+if(marks>=90){
+    grade = 'A grade';
+}else if(marks>=70&&marks<+90){
+    grade = 'B grade'
+}else if(marks>=)50&&marks <70{
+    grade = 'C grade';
+}else{
+    grade = 'F grade';
+}
+
+console.log(`Your grade is :${grade}`)
+
+3. What are loops, and what do we need them? Expain different types of loops with their syntax and examples.
+
+Answer:
+Loops are fundamental programming constructs in JavaScript that allow you to execute a block of code repeatedly based on a condition or a set of conditions. 
+
+why We Need Loops:
+1. Repetition: Automates repetitive tasks without writing redundant code.
+2. Iteration: iterate each element in a data structure like arrays, object, or other collections.
+
+Types of Loops in JavaScript
+1.For Loop: A 'for' loop is used when the number of iterations is known beforehand. it consists of three parts: initialization, condition, and increment/decrement.
+
+Syntax:
+for (initialization; condition; increment/decrement) {
+    // code block to be executed
+}
+
+
+Example:
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+2.While Loop:
+A 'while' loop executes a block of code as long as a specified condition is true. It is useful when the number of iterations is not known beforehand.
+
+Syntax:
+while (condition) {
+    // code block to be executed
+}
+
+Example:
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+
+3. Do-while Loop:
+A 'do-while' loop is similar to a  'while' loop, but it guarantees that the code block is executed at leat once before the condition is tested.
+Syntax:
+do {
+    // code block to be executed
+} while (condition);
+
+Example:
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+
+4. For...in Loop
+The 'for...in' loop iterates over the enumerable properties of an obeject.
+
+Syntax:
+for (key in object) {
+    // code block to be executed
+}
+
+Example:
+const person = {fname: "Keshav", lname: "kumar", age: 24};
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+
+5. For...of Loop
+The 'for...of' loop iterates over the values of an iterable object(like an array,string,map, Set etc.).
+
+Syntax:
+for (variable of iterable) {
+    // code block to be executed
+}
+ Example:
+ const array = [1, 2, 3, 4, 5];
+for (let value of array) {
+    console.log(value);
+}
+
+
+4. Generate numbers between and 2 given numbers.
+
+Ex.
+.const num1 = 10;
+.const num = 25;
+
+Answer:
+const num1 = 10;
+const num2 = 25;
+
+for(let i=  num +1; i<=num2; i++){
+    console.log(i);
+}
+
+
+
+
+
+              Core jawascript-2
+
+1. Create a arrow function called square that take a number as an argument and returns its square. Use the arrow function to calculate the square of a given number and display the result.
+
+Answer:
+
+const square = (number) => number * number
+const number = 5;
+const result = square(number);
+
+// Display the result
+console.log(`The square of ${number} is ${result}`);
+
+2.  Createl a jawascript function called generaterGreeting that takes a name as an argument and returns personalized greeting message. Use this function to greet three different people.
+
+Answer:
+const generateGreeting = (name) => `Hello, ${name}! Welcome!`;
+
+// Use the function to greet three different people
+const greeting1 = generateGreeting("Alice");
+const greeting2 = generateGreeting("Bob");
+const greeting3 = generateGreeting("Charlie");
+
+console.log(greeting1);
+console.log(greeting2);
+console.log(greeting3);
+
+3.Write a javaScript function called calculateTax that takes an income as an argument and returns the amount of tax to be paid. Use a closure to handle different tax rates based on income ranges. Test the function with various incomes. 
+
+Answer:
+// Define the function with a closure for tax rates
+const calculateTax = (function() {
+    const taxBrackets = [
+        { limit: 0, rate: 0.10 },
+        { limit: 10000, rate: 0.12 },
+        { limit: 30000, rate: 0.22 },
+        { limit: 100000, rate: 0.24 }
+    ];
+
+    return function(income) {
+        let tax = 0;
+
+        for (let i = taxBrackets.length - 1; i >= 0; i--) {
+            if (income > taxBrackets[i].limit) {
+                tax += (income - taxBrackets[i].limit) * taxBrackets[i].rate;
+                income = taxBrackets[i].limit;
+            }
+        }
+
+        return tax;
+    };
+})();
+
+// Test the function with various incomes
+const incomes = [5000, 15000, 40000, 120000];
+
+incomes.forEach(income => {
+    const tax = calculateTax(income);
+    console.log(`Income: $${income}, Tax: $${tax.toFixed(2)}`);
+});
+
+4. Assignment: Building a Student Management System
+
+Description:
+You are tasked with building a student management system using javascript. The system should allow you to perform various operations an a list of students, including adding, updating, deleting, and displaying student information.
+
+Requirements:
+Here is an initial array of students.Each student is represented as an object with the folowing properties:id, firstName, lastName, age and, and grade.
+
+const students = [
+{id: 1, firstName: "john", lastName: "Doe", age: 20, grade:"A"},
+{id: 1, firstName: "jane", lastName: "Smith", age: 22, grade:"B"},
+{id: 1, firstName: "Bob", lastName: "Johnson", age: 19, grade:"A"},
+]
+
+Implement the following function using pure javaScript(without any external libraries or frameworks):
+
+a. Add a Student: Create a function to add a new student to the array.
+
+b. Update Student information: Create a function to update a student's information based on theri id.
+
+c. Delete a Student: Create a function to delete a student based on theri id.
+
+d. List All Students: Create a function to display a list of all students.
+
+e. Find Students by Grade: Create a function to find all students who have a specific grade.
+
+f. Calculate Average Age: Create a function to calculate the average age of all students using the array method.
+
+Answer:
+const students = [
+    {id: 1, firstName: "John", lastName: "Doe", age: 20, grade: "A"},
+    {id: 2, firstName: "Jane", lastName: "Smith", age: 22, grade: "B"},
+    {id: 3, firstName: "Bob", lastName: "Johnson", age: 19, grade: "A"},
+];
+
+// a. Add a Student
+function addStudent(newStudent) {
+    students.push(newStudent);
+}
+
+// b. Update Student information
+function updateStudent(id, updatedInfo) {
+    const student = students.find(student => student.id === id);
+    if (student) {
+        Object.assign(student, updatedInfo);
+    }
+}
+
+// c. Delete a Student
+function deleteStudent(id) {
+    const index = students.findIndex(student => student.id === id);
+    if (index !== -1) {
+        students.splice(index, 1);
+    }
+}
+
+// d. List All Students
+function listAllStudents() {
+    console.log("List of all students:");
+    students.forEach(student => {
+        console.log(student);
+    });
+}
+
+// e. Find Students by Grade
+function findStudentsByGrade(grade) {
+    return students.filter(student => student.grade === grade);
+}
+
+// f. Calculate Average Age
+function calculateAverageAge() {
+    const totalAge = students.reduce((sum, student) => sum + student.age, 0);
+    return totalAge / students.length;
+}
+
+// Test the functions
+// Adding a new student
+addStudent({id: 4, firstName: "Alice", lastName: "Brown", age: 21, grade: "B"});
+listAllStudents();
+
+// Updating a student's information
+updateStudent(2, {age: 23, grade: "A"});
+listAllStudents();
+
+// Deleting a student
+deleteStudent(3);
+listAllStudents();
+
+// Finding students by grade
+const gradeAStudents = findStudentsByGrade("A");
+console.log("Students with grade A:", gradeAStudents);
+
+// Calculating average age
+const averageAge = calculateAverageAge();
+console.log("Average age of students:", averageAge);
+
+5. In the following shopping cart add, remove, and edit items
+
+const shoppingCart = ['milk', 'coffee', 'tea', 'Honey']
+add 'Meat' in the beginning of your shopping cart if it has not been alrady added Sugar at the end of you shopping cart if it has not been already added remove 'honey' if you are allergic to honey modify Tea to 'Green Tea' 
+
+Answer:
+let shoppingCart = ['milk', 'coffee', 'tea', 'Honey'];
+
+// Add 'Meat' at the beginning if it hasn't been added already
+if (!shoppingCart.includes('Meat')) {
+    shoppingCart.unshift('Meat');
+}
+
+// Add 'Sugar' at the end if it hasn't been added already
+if (!shoppingCart.includes('Sugar')) {
+    shoppingCart.push('Sugar');
+}
+
+// Remove 'Honey' if you are allergic to honey
+const honeyIndex = shoppingCart.findIndex(item => item.toLowerCase() === 'honey');
+if (honeyIndex !== -1) {
+    shoppingCart.splice(honeyIndex, 1);
+}
+
+// Modify 'Tea' to 'Green Tea'
+const teaIndex = shoppingCart.findIndex(item => item.toLowerCase() === 'tea');
+if (teaIndex !== -1) {
+    shoppingCart[teaIndex] = 'Green Tea';
+}
+
+console.log(shoppingCart);
+
+6. The following is an array of 10 students ages:
+=> const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25,24]
+.Sort the array and find the min and max age.
+.Find the median age(one middle item or two middle items divided by two)
+.Find the average age(all items divided by number of items)
+.Find the range of the ages (max minus min)
+.Compare the value of (min-average) and (max-average),use abs() method
+
+Answer:
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+
+
+// Step 1: Sort the Array
+ages.sort((a,b)=>a-b);
+
+// Step 2: Find the min and max age
+const minAge = ages[0];
+const maxAge = ages[ages.length-1];
+
+
+// Step 3: Find the median age
+let medianAge;
+if(ages.length % 2=== 0){
+    const mid1 = ages[Math.floor(ages.length/2)-1];
+    const mid2 = ages[Math.floor(ages.length/2)];
+    medianAge = (mid1+mid2)/2;
+} else{
+    medianAge = ages[Math.floor(ages.length/2)]
+}
+
+// Step 4: Find the average age 
+const sumAges = ages.reduce((sum,age)=>sum+age, 0);
+const averageAge = sumAges/ages.length;
+// Step 5: Find the range of agees
+const ageRange = maxAge-minAge;
+
+// Step 6: Comapare (min-average) and (max-average)
+const minDifference = Math.abs(minAge-averageAge);
+const maxDifference = Math.abs(maxAge-averageAge);
+
+console.log("Sorted Ages:", ages);
+console.log("Min Age:", minAge);
+console.log("Max Age:", maxAge);
+console.log("Median Age:", medianAge);
+console.log("Average Age:", averageAge);
+console.log("Age Range:", ageRange);
+console.log("Min-Average Difference:", minDifference);
+console.log("Max-Average  Difference:", maxDifference);
+
+7. Create a Map in JavaScript and perform the following operations:
+.Add key-value pairs to the Map
+.Check if a specific key exists.
+.Retrieve the value associated with a given key.
+.Iterate through all key-value pairs.
+
+Answer:
+// Create a new Map
+const myMap = new Map();
+
+// Add key-value pairs to the Map
+myMap.set('name', 'John Doe');
+myMap.set('age', 30);
+myMap.set('city', 'New York');
+
+// Check if a specific key exists
+const keyToCheck = 'age';
+if (myMap.has(keyToCheck)) {
+    console.log(`Key '${keyToCheck}' exists in the Map.`);
+} else {
+    console.log(`Key '${keyToCheck}' does not exist in the Map.`);
+}
+
+// Retrieve the value associated with a given key
+const keyToRetrieve = 'city';
+if (myMap.has(keyToRetrieve)) {
+    const value = myMap.get(keyToRetrieve);
+    console.log(`Value associated with key '${keyToRetrieve}' is '${value}'.`);
+} else {
+    console.log(`Key '${keyToRetrieve}' does not exist in the Map.`);
+}
+
+// Iterate through all key-value pairs
+console.log('Iterating through all key-value pairs in the Map:');
+for (const [key, value] of myMap) {
+    console.log(`${key}: ${value}`);
+}
+
+
+           HOF and Functional programming
+
+1. Write a function calculate that takes two numbers and a callback function. The callback  function should perform a mathematical operation (addition, subtraction, multiplication, or division) on the two numbers and return the result.
+
+Answer:
+function calculate(a,b, callback){
+   return callback(a,b);
+}
+
+function add() {
+ return a+b;
+}
+
+function subtraction(){
+    return a-b
+}
+
+function multiply(){
+    return a*b
+}
+
+function divide(){
+    if(b==0){
+        return invalidError
+    }else{
+        a/b
+    }
+}
+
+const calculate_add = calculate(3,6, add);
+const calculate_subtract = calculate(3,6, add);
+const calculate_multiply = calculate(3,6, add);
+const calculate_divide = calculate(3,6, add);
+
+console.log("addition", calculate_add);
+console.log("subtraction", calculate_subtract);
+console.log("multiply", calculate_multiply);
+console.log("divide", calculate_divide);
+
+2. Write a function delayedMessage that takes a message and a delay time in milliseconds. The function should log the message after the specified delay.
+
+Answer:
+function delayedMessage(message) {
+    setTimeout(() => {
+        console.log(message);
+    }, 1000);
+}
+
+// Example usage
+delayedMessage("Hello, world!"); // Logs "Hello, world!" after 1 seconds
+
+3.Write a function printArrayElements that takes an array and logs each using the forEach method.
+
+Answer:
+function printArrayElements(array) {
+    array.forEach(element => {
+        console.log(element);
+    });
+}
+
+// Example usage
+const sampleArray = [1, 2, 3, 4, 5];
+printArrayElements(sampleArray); // Logs each element of the array
+
+ 4. Write a function sumEvenNumbers that takes an array of numbers and returns the sum of all even numbers using the reduce method.
+
+ Answer:
+ function sumEvenNumbers(array) {
+    return array.reduce((accumulator, currentValue) => {
+        if (currentValue % 2 === 0) {
+            return accumulator + currentValue;
+        } else {
+            return accumulator;
+        }
+    }, 0);
+}
+
+const sampleArray = [1, 2, 3, 4, 5, 6];
+const sunEvennumbers_result = sumEvenNumbers(sampleArray);
+console.log("sunEvennumbers_result);
+
+5. Write a function calculate that takes two numbers and a callback function. The callback function should perform a mathematical operation (addition, subtraction, multiplication, or division) on the two numbers and return the result.
+
+Answer:
+
+function calculate(a,b, callback){
+   return callback(a,b);
+}
+
+function add() {
+ return a+b;
+}
+
+function subtraction(){
+    return a-b
+}
+
+function multiply(){
+    return a*b
+}
+
+function divide(){
+    if(b==0){
+        return invalidError
+    }else{
+        a/b
+    }
+}
+
+const calculate_add = calculate(3,6, add);
+const calculate_subtract = calculate(3,6, add);
+const calculate_multiply = calculate(3,6, add);
+const calculate_divide = calculate(3,6, add);
+
+console.log("addition", calculate_add);
+console.log("subtraction", calculate_subtract);
+console.log("multiply", calculate_multiply);
+console.log("divide", calculate_divide);
+
+
+           Closure and Destructuring
+
+1. Write a function counter that returns an object with two methods: increment()  which increments a count variable initialized to 0, and getCount() which returns the current count value.
+
+Answer:
+function counter() {
+    let count = 0;
+    
+    return {
+        increment() {
+            count++;
+        },
+        getCount() {
+            return count;
+        }
+    };
+}
+
+// Example usage
+const myCounter = counter();
+myCounter.increment();
+myCounter.increment();
+console.log(myCounter.getCount()); // Logs: 2
+myCounter.increment();
+console.log(myCounter.getCount()); // Logs: 3
+
+2. Write a function calculateTotal that takes an object with properties price and quantity, and returns the total cost using Destructuring.
+
+Answer:
+function calculateTotal({ price, quantity }) {
+    return price * quantity;
+}
+
+// Example usage
+const item = {
+    price: 10,
+    quantity: 3
+};
+
+const totalCost = calculateTotal(item); 
+console.log(totalCost);
+
+3. You are  given an array of numbers named myArray. Create a function that takes any number of arguments and adds them to the existing array. Use the spread and rest operator. 
+
+Answer:
+let myArray = [1, 2, 3];
+
+function addToArray(...args) {
+    myArray = [...myArray, ...args];
+}
+
+// Example usage
+addToArray(4, 5, 6);
+console.log(myArray); // Logs: [1, 2, 3, 4, 5, 6]
+
+addToArray(7, 8);
+console.log(myArray); // Logs: [1, 2, 3, 4, 5, 6, 7, 8]
+
+4. Write a function multiplyAndSum that takes any number of arguments using the rest operator and returns the product of the first two arguments added to the sum of the rest.
+
+Answer:
+function multiplyAndSum(...args) {
+    if (args.length < 2) {
+        throw new Error("At least two arguments are required");
+    }
+
+    const [first, second, ...rest] = args;
+    const product = first * second;
+    const sumOfRest = rest.reduce((acc, curr) => acc + curr, 0);
+
+    return product + sumOfRest;
+}
+
+// Example usage
+const result1 = multiplyAndSum(2, 3, 4, 5); // (2 * 3) + (4 + 5) = 6 + 9 = 15
+console.log(result1); // Logs: 15
+
+const result2 = multiplyAndSum(1, 2, 3); // (1 * 2) + 3 = 2 + 3 = 5
+console.log(result2); // Logs: 5
+
+
+                    Git and GitHub
+
+Q1. Explain what version control is and its importance in software development
+
+Answer:
+Version control is a system that manages changes to source code or other collections of files over time. It tracks and records modifications, allowing developers to revert to previous versions, collaborate with others, and maintain a history of changes.
+
+       Importance in software development
+
+1. collaboration: Version control systems allow multiple developers to work on the same project simultaneously. Changes are tracked and merged, minimizing conflicts and ensuring that everyone's work is integrated smoothly.
+
+2.History and Tracking: It provides a detailed history of changes, including who made each change and why. This makes it easier to understand the evolution of the code and to debug issues by tracing back to when a problem was introduced.
+
+3.Reverting Changes: If a new feature or fix introduces bugs or issues, version control allows developers to revert to previous stable versions of the codebase.
+
+4.Branching and Merging: Developers can work on new features or experiments in isolated branches without affecting the main codebase. Once changes are tested and verified, they can be merged back into the main branch.
+
+5.Backup and Recovery: The version control system serves as a backup of the project's codebase. In case of data loss or corruption, previous versions can be restored.
+
+
+
+Q2. Explain the Git WorkFlow, including the staging area, working directory, and repository
+
+Answer:
+Git workflow is the process of managing changes in your codebase using Git, a distributed version control system.
+
+1. working directory:
+The working directory is the local directory where you have checked out your project files. It is the place where you make changes to your code.
+2.staging Area:The staging area (or index) is a file, also known as the "index," that sits between the working directory and the repository. It holds a snapshot of your changes that will be included in the next commit.
+3.Repository:The repository is a database where Git stores the entire history of your project. It contains all your commits and is where the official version of your project is kept.
+
+
+Q3.Explain what .gitignore is and why it's important in version control
+Answer:.gitignore is a text file located in the root directory of a Git repository (though it can be placed in subdirectories as well). It contains a list of file patterns and directory names that Git should ignore.
+
+   Here is five point Why .gitignore Is Important
+1.Prevent Unnecessary Files from Being Tracked
+2.Reduce Repository size
+3.Improve performance
+4.Avoid Merge conflicts
+5.Maintain Clean History
+
+Q4 Briefly explain what GitHub is and how it facilitates collaboration and version control also name some alternatives to Github.
+
+Answer:
+GitHub is a web-based platform for version control and collaboration that uses Git. It provides a hosting service for Git repositories and includes additional features to facilitate project management and collaboration among developers.
+
+                How GitHub Facilitates Collaboration and Version Control
+
+1. Version Control:
+.Git integration:GitHub integrates with Git, allowing users to manage and track changes to codebases. Developers can clone repositories, make changes, commit updates, and push or pull changes to and from remote repositories.
+
+.Branching and Merging:GitHub supports branching and merging, enabling multiple developers to work on different features or bug fixes simultaneously and then combine their work seamlessly.
+
+2.Collaboration:
+.Pull Requests: GitHub allows developers to propose changes to a repository through pull requests. Other team members can review, comment on, and discuss these changes before they are merged into the main codebase.
+
+.Issues and project management: GitHub provides tools for tracking bugs, tasks, and feature requests through issues. Additionally, project boards and milestones help organize and manage project progress.
+
+              Alternatives to GitHub
+
+1. GitLab
+2.SourceForge
+3.AWS CodeCommite
+4.Azure Repository
+5.BitBucket
+
+Q5 Describe the process of contributing to  any open-source project on Github in a step-by-step manner
+
+Answer:
+Contributing to an open-source project on GitHub involves several key steps. Here’s a step-by-step guide to help you get started:
+
+1. Find a Project
+Explore Projects: Look for open-source projects that interest you or align with your skills. GitHub has a Discover page and you can also search for projects based on topics or labels (e.g., good first issue).
+
+Read Documentation: Check the project's README file, contributing guidelines, and any other documentation to understand how to contribute and what the project’s goals are.
+
+2. Fork the Repository
+Fork: Navigate to the project’s GitHub page and click the Fork button in the upper right corner. This creates a personal copy of the repository under your GitHub account.
+
+Clone: Clone your forked repository to your local machine using git clone. For example:
+
+git clone https://github.com/your-username/project-name.git
+
+3. Set Up Your Local Environment
+.Navigate to Directory: Change into the directory of the cloned 
+
+     cd project-name
+
+.Install Dependencies: Follow the project's setup instructions to install any required dependencies (e.g., using npm install, pip install, etc.).
+
+4. Create a New Branch
+.Branching: Create a new branch for your changes to keep your work isolated from the main branch. Use a descriptive name for your branch:
+
+git checkout -b feature/your-feature-name
+
+5. Make Changes
+.Edit Code:Make your changes or additions to the codebase in your new branch. Ensure your changes adhere to the project's coding standards and guidelines.
+.Test:Run tests and verify that your changes work as expected and do not break existing functionality.
+
+6. Commit Your changes
+.Stage Changes: Add the files you’ve modified to the staging area:
+
+           git add .
+.Commit:Commit your changes with a clear and concise commit message:
+
+ git commit -m "Add feature: describe what you did"
+
+
+7. Push Yourr Changes
+.Push:Push your branch with the committed changes to your forked repository on GitHub:
+
+       git push origin feature/your-feature-name
+
+8. Create a Pull Requests
+. Open Pull Request: Go to the GitHub page for your forked repository and navigate to the Pull Requests tab. Click the New Pull Request button.
+
+. Compare Branches: Select your branch from the dropdown and compare it with the main branch of the original repository.
+
+. Describe Changes: Write a detailed description of the changes you’ve made and submit the pull request.
+
+9.Addrss Feedback
+. Review: Project maintainers or other contributors will review your pull request. They may provide feedback or request changes.
+
+. Update Pull Request: Make any necessary changes based on feedback, commit them to your branch, and push them to update the pull request automatically.
+
+10. Celebrate:
+.Merged: Once your pull request is approved and merged, your contributions become part of the project.
+
+.Engage: Continue to contribute, provide feedback, and engage with the community. Follow up on issues or discussions related to your contribution.
+
+     
+             JavaScript DOM
