@@ -1,6 +1,7 @@
 1. Write a simple program in HTML  that displays the heading "HTML defines the content and structure of your website" on the web browser?
  
  Answer:
+
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +17,7 @@
 2. Explain the purpose of comments in HTML and provide an example of how to use comments in an HTML document?
 
 Answer:
+
 Comments in HTML are used to reminders within the code that are not displayed in the browser. we can add notes. It's help developers to maintain or collaborate with others. 
 
 Purpose of Comments in HTML:
@@ -64,6 +66,7 @@ Example of Using Comments in an HTML Document:
 3.Write an HTML program that includes a heading, a paragraph of text, a horizontal line, and a line break. Arrange these elements to create a simple web page layout.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,6 +98,7 @@ Answer:
 4. Write a short note on Tag and element with an example?
 
 Answer:
+
 Tag : A tag is a basic component of HTML used to define or describe content. Tags are enclosed in angle brackets. There are two main types of tags:
 
 . Opening tag: Marks the beginning of an element. For example, `<p>` starts a paragraph.
@@ -115,6 +119,7 @@ Here is example of element:
 5. What is the  DOCTYPE Declaration in HTML?
 
 Answer:
+
 DOCTYPE Declaration : this declaration defines the documet type and version of html being used.
 
 Key Points :
@@ -148,10 +153,10 @@ Answer:
 </body>
 </html>
 
-2.Build a s
-imple webpage that hepls users navigate different web developement-related websites. Note:on clicking the hyperlink the web pages should open in a new tab. Below is reference image.
+2. Build a simple webpage that hepls users navigate different web developement-related websites. Note:on clicking the hyperlink the web pages should open in a new tab. Below is reference image.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -254,6 +259,7 @@ Answer:
 4. Create an ordered list of html tags. Each list item must include the tag name and some information about the tag.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -334,6 +340,7 @@ Answer:
 5. create a description list of full stack web development teck, using he <dl> tag. Each term should be a tech stack name and each description should be a brief explanation of what the tech stack is used for.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -382,6 +389,7 @@ Answer:
 6.Create an ordered list of the full stack web development tech stack Html, CSS, and Js. For each tech stack, create a table that lists the tech stack name, its primary use cases, and some key features or benefits.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -495,6 +503,7 @@ Answer:
 7. Build a complex nested list structure representing a multi-level table of contents. Use unordered lists (<ul>) and list items (<li>) with inline-block styling to create a structure layout. Apply fomatting tags to enhance the presentation of lst items.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -632,6 +641,7 @@ Answer:
 8. Create a table to display a conference shedule. Each row corresponds to a time slot, and each column corressponds to a room. Some time slots might have multiple sessions running simultaneously in different rooms. Utilize rowspan and colspan attributes as necessary to accommodate this complex shedule.(use table attribute "cellpadding" to give extra padding in each table cell).
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -725,6 +735,7 @@ Answer:
 1. Create an image gallery that holds muliple images.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -765,6 +776,7 @@ Answer:
 2. Use video and audio tags to display video and audio with the playback, audio control
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -797,6 +809,7 @@ Answer:
 3. Modify the previous assignment so that the audio and video play automatically as the page is loaded and they should play infinitely.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -828,6 +841,7 @@ Answer:
 4. Use iframe to embed the PhysicsWallah Wikipedia page properly
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -855,6 +869,7 @@ Note: Validation is a must.
 Ex: First name, last name, email cannot be less than 3 charracters, age cannot be negative and cannot be greater than 150, fields are required, etc...,
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -999,7 +1014,8 @@ Answer:
 </body>
 </html>
 
-/* Base block styles */
+Create a styles.css file and add the following code:
+
 .content {
     margin: 20px;
     padding: 10px;
@@ -1087,7 +1103,8 @@ Answer:
 </body>
 </html>
 
-/* Custom color palette */
+Create a styles.css file and add the following code:
+
 :root {
     --primary-color: #4CAF50;
     --secondary-color: #2196F3;
@@ -1201,7 +1218,8 @@ Answer:
 </body>
 </html>
 
-/* Custom color palette */
+Create a styles.css file and add the following code:
+
 :root {
     --navbar-bg-color: #333;
     --navbar-link-color: #fff;
@@ -1264,7 +1282,8 @@ Answer:
 </body>
 </html>
 
-/* General styles */
+Create a styles.css file and add the following code:
+
 body {
     margin: 0;
     height: 100vh;
@@ -1322,7 +1341,8 @@ Answer:
 </body>
 </html>
 
-* Custom color palette */
+Create a styles.css file and add the following code:
+
 :root {
     --navbar-bg-color: #333;
     --navbar-link-color: #fff;
@@ -1404,7 +1424,9 @@ Answer:
 </body>
 </html>
 
-/* General styles */
+
+Create a styles.css file and add the following code:
+
 body {
     margin: 0;
     height: 100vh;
@@ -1448,6 +1470,8 @@ Answer:
 </body>
 </html>
 
+Create a styles.css file and add the following code:
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -1488,6 +1512,7 @@ body {
 6. Create a simple website as mentioned in the below image. You can get the assets by visiting https:/pwskills.com/about-us.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1527,6 +1552,7 @@ Answer:
 7. Create a simple webpage with a card similar to question number2. The card must be semi-transparent as default and on hovering the card must be displayed clearly. Use CSS opacity to achieve this output.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1542,6 +1568,8 @@ Answer:
     </div>
 </body>
 </html>
+
+Create a styles.css file and add the following code:
 
 body {
     margin: 0;
@@ -1582,6 +1610,7 @@ body {
 8. Create a simple list of items as mentioned in the below image.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1602,7 +1631,7 @@ Answer:
 
                   Position in CSS
 
-Write code to position 5 equal-sized(50 * 50px) boxes A, B, C, D, and E as follows,
+1. Write code to position 5 equal-sized(50 * 50px) boxes A, B, C, D, and E as follows,
 a. box A 200px from the left, and 200px from the top of the viewport.
 b. Box B -30px left, and -30px above from the center of box A.
 c. Box C -30px right, and -30px above from the center of box A.
@@ -1668,12 +1697,14 @@ Answer:
 2. Explain the difference between Absolute and Relative positioning.
 
 Answer:
+
 Absolute: Positioned relative to the nearest positioned ancestor or the viewport.
 Relative: Positioned relative to its normal position in the document flow.
 
 3.Create a card as shown in the  picture below.(You can use CSS float property only for layout).
 
 answer:
+
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1718,6 +1749,7 @@ answer:
 4. Create a simple header that sticks to the top of a webpage upon scrolling.
 
 Answer:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1817,6 +1849,7 @@ Grid: Choose Grid when you need to manage both rows and columns simultaneously a
 5. flex-wrap
 
 Answer:
+
 1.justify-content
 
 Role: This property aligns the flex items along the main axis (which is horizontal by default). It distributes the extra space when the items do not take up all the available space.
@@ -1855,6 +1888,8 @@ Answer:
     </div>
 </body>
 </html>
+
+Create a styles.css file and add the following code:
 
 html, body {
     height: 100%;
@@ -1934,6 +1969,9 @@ Answer:
     </section>
 </body>
 </html>
+
+
+Create a styles.css file and add the following code:
 
 body {
     font-family: Arial, sans-serif;
@@ -2064,6 +2102,8 @@ Answer:
 </body>
 </html>
 
+Create a styles.css file and add the following code:
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -2131,6 +2171,9 @@ Answer:
 </body>
 </html>
 
+
+Create a styles.css file and add the following code:
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -2171,6 +2214,8 @@ Answer:
     </div>
 </body>
 </html>
+
+Create a styles.css file and add the following code:
 
 body {
   font-family: Arial, sans-serif;
@@ -2394,6 +2439,8 @@ Answer:
 </body>
 </html>
 
+Create a styles.css file and add the following code:
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -2450,6 +2497,9 @@ Answer:
     </footer>
 </body>
 </html>
+
+
+Create a styles.css file and add the following code:
 
 body {
     font-family: Arial, sans-serif;
@@ -2535,6 +2585,8 @@ Answer: <!DOCTYPE html>
 </body>
 </html>
 
+Create a styles.css file and add the following code:
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -2605,6 +2657,8 @@ Answer:
 </body>
 </html>
 
+Create a styles.css file and add the following code:
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -2669,6 +2723,8 @@ Answer:
 </body>
 
 </html>
+
+Create a styles.css file and add the following code:
 
 body {
     font-family: Arial, sans-serif;
@@ -2750,6 +2806,7 @@ Get the image from (https://www.freepik.com/free-phote/young-happy-woman-with-go
 portrait_10881326.html#page=2&query=login&position=11&from_view=search&track=sph)
 
 Answer:
+
 1. Set up Vite Project:
 npm create vite@latest my-login-page --template vanilla
 cd my-login-page
@@ -2824,6 +2881,7 @@ module.exports = {
 2. Create a responsive images gallery using Tailwind CSS. The gallery should display a grid of images that adjust their size and layout based on the screen size.
 
 Answer:
+
 1. Set up Vite Project:
 npm create vite@latest my-login-page --template vanilla
 cd my-login-page
@@ -2883,6 +2941,7 @@ module.exports = {
 3. Create a non-responsive dashboard using Tailwind CSS, where the dashboards should include a sidebar navigation menu and a main contain area.(Making it responsive is optional) feel free to use any icons from any place, Your  goal is to design a visually appealing and user-friendly dashboard interface that is not responsive.
 
 Answer:
+
 Set up Vite Project:
 npm create vite@latest my-login-page --template vanilla
 cd my-login-page
@@ -3135,6 +3194,7 @@ Q2. Write a program that grades students based on their Marks
 Below 50 then an F grade
 
 Answer:
+
 const marks = 75;
 let grade;
 
@@ -3153,6 +3213,7 @@ console.log(`Your grade is :${grade}`)
 3. What are loops, and what do we need them? Expain different types of loops with their syntax and examples.
 
 Answer:
+
 Loops are fundamental programming constructs in JavaScript that allow you to execute a block of code repeatedly based on a condition or a set of conditions. 
 
 why We Need Loops:
@@ -3278,6 +3339,7 @@ console.log(greeting3);
 3.Write a javaScript function called calculateTax that takes an income as an argument and returns the amount of tax to be paid. Use a closure to handle different tax rates based on income ranges. Test the function with various incomes. 
 
 Answer:
+
 // Define the function with a closure for tax rates
 const calculateTax = (function() {
     const taxBrackets = [
@@ -3411,6 +3473,7 @@ const shoppingCart = ['milk', 'coffee', 'tea', 'Honey']
 add 'Meat' in the beginning of your shopping cart if it has not been alrady added Sugar at the end of you shopping cart if it has not been already added remove 'honey' if you are allergic to honey modify Tea to 'Green Tea' 
 
 Answer:
+
 let shoppingCart = ['milk', 'coffee', 'tea', 'Honey'];
 
 // Add 'Meat' at the beginning if it hasn't been added already
@@ -3446,6 +3509,7 @@ console.log(shoppingCart);
 .Compare the value of (min-average) and (max-average),use abs() method
 
 Answer:
+
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 
 
@@ -3493,6 +3557,7 @@ console.log("Max-Average  Difference:", maxDifference);
 .Iterate through all key-value pairs.
 
 Answer:
+
 // Create a new Map
 const myMap = new Map();
 
@@ -3530,6 +3595,7 @@ for (const [key, value] of myMap) {
 1. Write a function calculate that takes two numbers and a callback function. The callback  function should perform a mathematical operation (addition, subtraction, multiplication, or division) on the two numbers and return the result.
 
 Answer:
+
 function calculate(a,b, callback){
    return callback(a,b);
 }
@@ -3567,6 +3633,7 @@ console.log("divide", calculate_divide);
 2. Write a function delayedMessage that takes a message and a delay time in milliseconds. The function should log the message after the specified delay.
 
 Answer:
+
 function delayedMessage(message) {
     setTimeout(() => {
         console.log(message);
@@ -3579,6 +3646,7 @@ delayedMessage("Hello, world!"); // Logs "Hello, world!" after 1 seconds
 3.Write a function printArrayElements that takes an array and logs each using the forEach method.
 
 Answer:
+
 function printArrayElements(array) {
     array.forEach(element => {
         console.log(element);
@@ -3592,6 +3660,7 @@ printArrayElements(sampleArray); // Logs each element of the array
  4. Write a function sumEvenNumbers that takes an array of numbers and returns the sum of all even numbers using the reduce method.
 
  Answer:
+
  function sumEvenNumbers(array) {
     return array.reduce((accumulator, currentValue) => {
         if (currentValue % 2 === 0) {
@@ -3650,6 +3719,7 @@ console.log("divide", calculate_divide);
 1. Write a function counter that returns an object with two methods: increment()  which increments a count variable initialized to 0, and getCount() which returns the current count value.
 
 Answer:
+
 function counter() {
     let count = 0;
     
@@ -3674,6 +3744,7 @@ console.log(myCounter.getCount()); // Logs: 3
 2. Write a function calculateTotal that takes an object with properties price and quantity, and returns the total cost using Destructuring.
 
 Answer:
+
 function calculateTotal({ price, quantity }) {
     return price * quantity;
 }
@@ -3690,6 +3761,7 @@ console.log(totalCost);
 3. You are  given an array of numbers named myArray. Create a function that takes any number of arguments and adds them to the existing array. Use the spread and rest operator. 
 
 Answer:
+
 let myArray = [1, 2, 3];
 
 function addToArray(...args) {
@@ -3706,6 +3778,7 @@ console.log(myArray); // Logs: [1, 2, 3, 4, 5, 6, 7, 8]
 4. Write a function multiplyAndSum that takes any number of arguments using the rest operator and returns the product of the first two arguments added to the sum of the rest.
 
 Answer:
+
 function multiplyAndSum(...args) {
     if (args.length < 2) {
         throw new Error("At least two arguments are required");
@@ -3731,6 +3804,7 @@ console.log(result2); // Logs: 5
 Q1. Explain what version control is and its importance in software development
 
 Answer:
+
 Version control is a system that manages changes to source code or other collections of files over time. It tracks and records modifications, allowing developers to revert to previous versions, collaborate with others, and maintain a history of changes.
 
        Importance in software development
@@ -3750,6 +3824,7 @@ Version control is a system that manages changes to source code or other collect
 Q2. Explain the Git WorkFlow, including the staging area, working directory, and repository
 
 Answer:
+
 Git workflow is the process of managing changes in your codebase using Git, a distributed version control system.
 
 1. working directory:
@@ -3759,7 +3834,10 @@ The working directory is the local directory where you have checked out your pro
 
 
 Q3.Explain what .gitignore is and why it's important in version control
-Answer:.gitignore is a text file located in the root directory of a Git repository (though it can be placed in subdirectories as well). It contains a list of file patterns and directory names that Git should ignore.
+
+Answer:
+
+.gitignore is a text file located in the root directory of a Git repository (though it can be placed in subdirectories as well). It contains a list of file patterns and directory names that Git should ignore.
 
    Here is five point Why .gitignore Is Important
 1.Prevent Unnecessary Files from Being Tracked
@@ -3771,6 +3849,7 @@ Answer:.gitignore is a text file located in the root directory of a Git reposito
 Q4 Briefly explain what GitHub is and how it facilitates collaboration and version control also name some alternatives to Github.
 
 Answer:
+
 GitHub is a web-based platform for version control and collaboration that uses Git. It provides a hosting service for Git repositories and includes additional features to facilitate project management and collaboration among developers.
 
                 How GitHub Facilitates Collaboration and Version Control
@@ -3796,6 +3875,7 @@ GitHub is a web-based platform for version control and collaboration that uses G
 Q5 Describe the process of contributing to  any open-source project on Github in a step-by-step manner
 
 Answer:
+
 Contributing to an open-source project on GitHub involves several key steps. Here’s a step-by-step guide to help you get started:
 
 1. Find a Project
@@ -3858,4 +3938,1433 @@ git checkout -b feature/your-feature-name
 .Engage: Continue to contribute, provide feedback, and engage with the community. Follow up on issues or discussions related to your contribution.
 
      
-             JavaScript DOM
+6. Deploy Tailwind projects named Youtube, slack, and Gmail clones on GitGub pages and share the deployed link of those three. Expected output-Live hosted URL Link of your deployed respective website with GiHub pages
+
+Answer:
+1. https://github.com/keshav-kum/YouTube.git
+2.https://github.com/keshav-kum/slack.git
+3.https://github.com/keshav-kum/Full-Gmail.git
+
+            JavaScript DOM
+
+1. Explain the DoM and its role in Web development
+
+Answer:
+
+The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, which allows programs to interact with and manipulate the document's structure, style, and content dynamically
+
+1. Manipulating Content: Developers can use JavaScript to change the content of an HTML document on-the-fly. For instance, they can add, remove, or modify elements and their attributes.
+
+        document.getElementById('example').innerHTML = 'New Content';
+
+2. Changing Style:The DOM allows dynamic manipulation of CSS styles. Developers can change the style properties of elements to create interactive and responsive designs.
+
+          document.getElementById('example').style.color = 'blue';
+
+3.Handling Events:
+        The DOM enables handling of user interactions, such as clicks, key presses, and mouse movements. Event listeners can be attached to elements to define how the document should respond to these events.
+
+             document.getElementById('example').addEventListener('click', function() {
+                           alert('Element clicked!');
+                        });
+4. Navigation:
+The DOM allows traversal of the document tree. Developers can navigate from one element to another using properties like parentNode, childNodes, nextSibling, and previousSibling.
+
+           let parent = document.getElementById('example').parentNode;
+5.Create Elements:
+ Developers can create new elements and append them to the document, allowing for dynamic generation of content
+
+        let newElement = document.createElement('div');
+         newElement.innerHTML = 'New Element';
+         document.body.appendChild(newElement);
+
+
+
+2. Explain the concepts of event delegation and provides a scenario where it is beneficial.
+
+Answer:
+
+Event delegation is a technique in JavaScript that involves handling events at a higher level in the DOM tree rather than attaching event listeners directly to each individual element. This is particularly useful for managing events on dynamically generated elements or a large number of elements efficiently.
+
+       Scenario Where Event Delegation is Beneficial
+
+Dynamic Content Updates: Consider a task management app where users can add, remove, and mark tasks as complete. The tasks are listed in a <ul>, and each task is an <li> element. Using event delegation, you can handle click events for all tasks, including those added dynamically, by attaching a single event listener to the <ul>.
+
+Example Scenario in Detail
+
+<ul id="taskList">
+    <!-- Tasks will be added here -->
+</ul>
+<button id="addTask">Add Task</button>
+
+<script>
+document.getElementById('taskList').addEventListener('click', function(event) {
+    if (event.target && event.target.nodeName === 'LI') {
+        event.target.classList.toggle('completed');
+    }
+});
+
+document.getElementById('addTask').addEventListener('click', function() {
+    let newTask = document.createElement('li');
+    newTask.innerHTML = 'New Task';
+    document.getElementById('taskList').appendChild(newTask);
+});
+</script>
+
+<style>
+.completed {
+    text-decoration: line-through;
+}
+</style>
+
+3. Explain the concepts of Event Bubbling in the DoM
+
+Answer:
+Event bubbling is a fundamental concept in the Document Object Model (DOM) event system. It describes the process by which an event starts at the most specific element (the target) and then propagates upward through the hierarchy of parent elements until it reaches the root of the document. This mechanism allows for efficient event handling and delegation.
+
+4. Explain the purpose of the addEventListener method in javaScript and how it facilitates event handling in the DOM.
+
+Answer:
+
+The addEventListener method in JavaScript is used to register an event handler to a specified element. This method allows you to specify a function that will be executed when a particular event occurs on that element. It facilitates event handling in the Document Object Model (DOM) by providing a way to programmatically define how the application should respond to user interactions or other events.
+
+Purpose of addEventListener
+
+. Event Handling: It attaches an event handler to an element for the specified event type. This makes it possible to define custom behavior in response to user actions, such as clicks, key presses, or form submissions.
+
+. Multiple Handlers: Unlike the older onclick property, addEventListener allows multiple event handlers to be attached to a single event on an element. This enables more complex interactions and modular code.
+
+. Separation of Concerns: It promotes a clear separation of JavaScript logic from HTML structure, improving code maintainability and readability.
+
+. Cross-browser Compatibility: It offers a standardized way to handle events across different browsers, reducing compatibility issues.
+
+Example Usage
+// Select the element
+const button = document.querySelector('button');
+
+// Define the event handler function
+function handleClick() {
+  alert('Button was clicked!');
+}
+
+// Attach the event handler to the click event
+button.addEventListener('click', handleClick);
+
+
+
+
+
+5.Create an HTML page with a button. Use JavaScript to display an alert when the button is clicked.
+
+Answer:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Alert</title>
+</head>
+<body>
+    <button id="myButton">Click Me!</button>
+
+    <script>
+        // Select the button element
+        const button = document.getElementById('myButton');
+
+        // Define the event handler function
+        function showAlert() {
+            alert('Button was clicked!');
+        }
+
+        // Attach the event handler to the click event
+        button.addEventListener('click', showAlert);
+    </script>
+</body>
+</html>
+
+6. Create a simple image carousel using HTML and javaScript, Design a basic HTML structure with images, and use javaScript to implement functionality that allows users to navigate through the images.
+
+Answer:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+        <div class="carousel">
+            <img src="image1.jpg" class="carousel-image" alt="Image 1">
+            <img src="image2.jpg" class="carousel-image" alt="Image 2">
+            <img src="image3.jpg" class="carousel-image" alt="Image 3">
+        </div>
+        <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+ Create a styles.css file and add the following code:
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+Create a script.js file and add the following code:
+
+
+let currentIndex = 0;
+
+function showImage(index) {
+    const images = document.querySelectorAll('.carousel-image');
+    const totalImages = images.length;
+
+    if (index >= totalImages) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalImages - 1;
+    } else {
+        currentIndex = index;
+    }
+
+    const newTransform = -currentIndex * 100 + '%';
+    document.querySelector('.carousel').style.transform = `translateX(${newTransform})`;
+}
+
+function nextImage() {
+    showImage(currentIndex + 1);
+}
+
+function prevImage() {
+    showImage(currentIndex - 1);
+}
+
+window.onload = () => {
+    showImage(currentIndex);
+};
+
+7. Build a dynamic dropdown menu using HTML and JavaScript. Create an HTML structure for a navigation menu with dropdowns. Use javaScript to toggle the visibility of dropdowns when the user hovers over menu items.
+
+Answer:
+
+Create an index.html file and add the following code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-link">Web Design</a></li>
+                    <li><a href="#" class="dropdown-link">SEO</a></li>
+                    <li><a href="#" class="dropdown-link">Marketing</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-link">Product 1</a></li>
+                    <li><a href="#" class="dropdown-link">Product 2</a></li>
+                    <li><a href="#" class="dropdown-link">Product 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
+
+Create a styles.css file and add the following code:
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-link {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-link:hover {
+    background-color: #575757;
+}
+
+Create a script.js file and add the following code:
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownItems = document.querySelectorAll('.dropdown');
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            const dropdownMenu = item.querySelector('.dropdown-menu');
+            dropdownMenu.style.display = 'block';
+        });
+
+        item.addEventListener('mouseleave', () => {
+            const dropdownMenu = item.querySelector('.dropdown-menu');
+            dropdownMenu.style.display = 'none';
+        });
+    });
+});
+
+8. Create a simple dynamic shopping list with the following features
+.The item should appear in the list.
+.Each item should be given a button that can be pressed to delelte that item off the list.
+.The input should be emptied and focused ready for you to enter another item
+
+Answer:
+
+Create an index.html file and add the following code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping List</h1>
+        <input type="text" id="itemInput" placeholder="Enter an item">
+        <button onclick="addItem()">Add Item</button>
+        <ul id="shoppingList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+Create a styles.css file and add the following code:
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+li button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+Create a script.js file and add the following code:
+
+function addItem() {
+    const itemInput = document.getElementById('itemInput');
+    const itemText = itemInput.value.trim();
+
+    if (itemText !== '') {
+        const listItem = document.createElement('li');
+        listItem.textContent = itemText;
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.onclick = function() {
+            listItem.remove();
+        };
+
+        listItem.appendChild(deleteButton);
+        document.getElementById('shoppingList').appendChild(listItem);
+
+        itemInput.value = '';
+        itemInput.focus();
+    }
+}
+
+              Walkthrough With React
+
+Q1 Explain the potential SEO challenges and solutions associated with Single Page Applications(SPAs).
+
+Answer:
+
+Single Page Applications (SPAs) present unique challenges and opportunities for Search Engine Optimization (SEO). Here are some key challenges and corresponding solutions:
+
+challenges
+1.javaScript Rendering:
+. Issue: SPAs rely heavily on JavaScript to load content, which can be problematic for search engines that may struggle to render JavaScript properly.
+
+. Solution: Use server-side rendering (SSR) or static site generation (SSG) to ensure that content is available in the HTML when the page is loaded. Tools like Next.js or Nuxt.js can help implement SSR/SSG.
+
+2. URL Structure:
+. Issue: SPAs often use client-side routing, which can result in non-standard URL structures (e.g., example.com/#/page). Search engines may not index these properly.
+
+. Solution: Ensure proper use of the History API to create clean, descriptive URLs without hash fragments. This allows each page to have a unique URL.
+Meta Tags and SEO Tags:
+
+3. Meta Tags and SEO Tags:
+. Issue: Dynamic content in SPAs can make it difficult to manage meta tags (title, description, etc.) and structured data.
+
+. Solution: Use frameworks or libraries that support dynamic meta tag updates, such as React Helmet for React or Vue Meta for Vue.js. Implement dynamic meta tags that update as the user navigates through the SPA.
+
+4. Page Load Speed:
+. Issue: SPAs can sometimes have slower initial load times due to large JavaScript bundles, which can negatively impact SEO.
+
+. Solution: Optimize JavaScript bundles by code splitting, lazy loading, and using modern build tools like Webpack. Additionally, leverage caching and CDNs to improve load times.
+
+5. Internal Linking:
+. Issue: SPAs might not generate traditional HTML links, which search engines use to discover and index content.
+
+. Solution: Ensure that internal links are accessible and follow standard HTML anchor tag (<a>) conventions. Use crawlable links within the application to facilitate search engine indexing.
+
+
+
+Q2 Explain the key differences and use cases between React's Client-Side Rendering(CSR) and Server-Side-Rendering(SSR). Provide examples of scenarios where each approach is advantageous, and discuss the challenges associated wtih using React in both contexts.
+
+Answer:
+Key differences
+1. Rendering Location:
+. Client-Side Rendering (CSR): The application is rendered in the browser using JavaScript. The server sends a minimal HTML file with a JavaScript bundle that the browser executes to render the UI.
+
+. Server-Side Rendering (SSR): The application is rendered on the server, and the fully rendered HTML is sent to the client. The client then hydrates the HTML with JavaScript to make it interactive.
+
+2.Initial Load Time:
+. CSR: Slower initial load time because the browser must download and execute the JavaScript bundle before rendering the content.
+
+. SSR: Faster initial load time because the browser receives fully rendered HTML from the server, displaying content sooner.
+
+3. SEO:
+CSR: Can be challenging for SEO because search engines may struggle to index content that requires JavaScript execution.
+
+SSR: Better for SEO as search engines can index the fully rendered HTML.
+
+Client-Side Rendering
+. Advantages:
+Rich User Interactions: Allows for dynamic and interactive UIs without needing to reload the page.
+
+Reduced Server Load: The server only needs to serve the initial HTML and JavaScript files, reducing the server's rendering workload.
+            .Example Scenarios
+. Dashboard Applications: Real-time updates and highly interactive components (e.g., charts, drag-and-drop interfaces).
+
+. Web Applications: Applications that prioritize user experience over SEO, such as web-based games or social media platforms.
+
+
+Server-Side Rendering
+.Advantages:SEO-Friendly: Provides fully rendered HTML, making it easier for search engines to crawl and index the content.
+
+Improved Initial Load Performance: Users see the content faster as the HTML is pre-rendered on the server.
+
+         .Example Scenarios:
+. E-commerce Sites: Product listings and details pages that benefit from faster initial load times and better SEO.
+
+. News Websites: Articles and content that need to be quickly accessible and indexed by search engines.
+
+challenges
+Client-Side Rendering
+SEO: Ensuring that search engines can index JavaScript-rendered content can be difficult. Solutions include using tools like prerendering or dynamic rendering.
+
+Initial Load Performance: Large JavaScript bundles can slow down the initial load. Techniques like code splitting and lazy loading are necessary to mitigate this.
+
+.Server-Side rendering
+. Complexity: SSR adds complexity to the application setup and development process. Handling data fetching and state management can be more challenging.
+
+. Server Load: The server must render the HTML for each request, which can increase the load and reduce scalability. Caching strategies are often necessary to handle high traffic.
+
+
+
+
+Q3. Explain the difference between npm and npx using the create-react-app code example.
+
+Answer:   npm (Node Package Manager)
+npm is the package manager for Node.js. It helps you to install, share, and manage packages (libraries or tools) for your Node.js projects. When you use npm, you typically install packages either globally on your system or locally within your project's directory.
+
+To create a new React app using create-react-app with npm, you would typically follow these steps:
+
+1. install `create-react-app` globallly:
+      npm install -g create-react-app
+
+      This installs create-react-app as a global package, making it available as a command anywhere on your system.
+
+2. Create a new React app:
+       create-react-app my-new-app
+
+This creates a new directory named my-new-app with the necessary files and dependencies for a React application.
+
+
+               npx (Node Package Executor)
+
+npx is a tool that comes with npm and allows you to execute binaries from npm packages without installing them globally. This can be particularly useful for one-time-use tools or to ensure you're using the latest version without managing global installations.
+
+To create a new React app using create-react-app with npx, you would use the following command:
+
+1. Create a new React app:
+         npx create-react-app my-new-app
+
+Here, npx temporarily installs create-react-app and runs it in a single command.
+
+Q4 Create a React components called "Login" without using JSX for its definition. This component should render an HTML structure that includes a form with input fields for a username and password. it should also have a button labeled "Submit".
+
+Answer:
+import React from 'react';
+
+class Login extends React.Component {
+  render() {
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'form',
+        null,
+        React.createElement(
+          'div',
+          null,
+          React.createElement(
+            'label',
+            { htmlFor: 'username' },
+            'Username:'
+          ),
+          React.createElement(
+            'input',
+            {
+              type: 'text',
+              id: 'username',
+              name: 'username'
+            }
+          )
+        ),
+        React.createElement(
+          'div',
+          null,
+          React.createElement(
+            'label',
+            { htmlFor: 'password' },
+            'Password:'
+          ),
+          React.createElement(
+            'input',
+            {
+              type: 'password',
+              id: 'password',
+              name: 'password'
+            }
+          )
+        ),
+        React.createElement(
+          'button',
+          {
+            type: 'submit'
+          },
+          'Submit'
+        )
+      )
+    );
+  }
+}
+
+export default Login;
+
+5. Create a React component called "Product" using JSX. This component render an HTML structure that includes a product image, price, name, and description. It should also have a button labeled "Buy Now"
+
+Answer:
+import React from 'react';
+
+const Product =() => {
+  return (
+    <div className="product">
+      <img src="image1.png" alt="image-example" />
+      <h2> Headphones| High Base Clear Sound </h2>
+      <p> The flagship-level battery life for the all-new OnePlus Nord Buds 2r delivers up to 38 hrs of non-stop music on  a single charge. </p>
+      <div> $12 </div>
+      <button>Buy Now</button>
+    </div>
+  );
+};
+
+export default Product;
+
+                Router & hooks
+
+Q1. Discuss the concept of hooks in React. Explain how they differ from class component lifecycle methods. Also, provide an example
+
+Answer:
+Hooks in React are functions that let you use state and other React features in functional components, which were previously only possible in class components. They were introduced in React 16.8 to simplify and enhance state management and side effects in functional components.
+
+Differences from Class Component lifecycle methods
+
+.State Management:
+
+Class Components: State is managed using this.state and updated with this.setState().
+
+Functional Components: State is managed using the useState hook.
+
+.Lifecycle Methods:
+
+. Class Components: Lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount are used to handle side effects.
+
+. Functional Components: The useEffect hook is used to handle side effects, combining the functionality of multiple lifecycle methods.
+
+.Code Reusability:
+Class Components: Reusing logic can be cumbersome and often involves higher-order components (HOCs) or render props.
+
+Functional Components: Custom hooks allow you to encapsulate and reuse stateful logic easily.
+
+
+Example
+Here’s a comparison of a class component and a functional component using hooks:
+
+Class Component
+import React, { Component } from 'react';
+
+class ExampleClass extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  componentDidMount() {
+    console.log('Component did mount');
+  }
+
+  componentDidUpdate() {
+    console.log('Component did update');
+  }
+
+  componentWillUnmount() {
+    console.log('Component will unmount');
+  }
+
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+}
+
+export default ExampleClass;
+
+Functional Component with Hooks
+
+import React, { useState, useEffect } from 'react';
+
+const ExampleFunction = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log('Component did mount and update');
+
+    return () => {
+      console.log('Component will unmount');
+    };
+  }, [count]); // Dependency array ensures effect runs on mount and when count changes
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+};
+
+export default ExampleFunction;
+
+
+Q2. Explain and discuss its syntax, purpose, and hot it manages state in functional components for  the following hooks
+
+.useState
+.useEffect
+
+Answer:
+`useState`
+           Syntax
+           const [state, setState] = useState(initialState);
+purpose:
+The useState hook allows you to add state to functional components. It returns an array containing the current state value and a function to update that state. This enables functional components to manage their own state without the need for class components.
+
+Hoe it Manages State
+. Initialization: When you call useState, you pass the initial state as an argument. This can be any type of value: a number, string, array, object, etc.
+
+. State Value: The first element of the array returned by useState is the current state value.
+
+. Updater Function: The second element is a function that you call to update the state. When this function is called with a new state value, React will re-render the component with the updated state.
+
+`useEffect`
+Syntax
+
+  useEffect(() => {
+  // Side effect code
+
+  return () => {
+    // Cleanup code (optional)
+  };
+}, [dependencies]);
+
+purpose
+The useEffect hook lets you perform side effects in functional components
+
+How it Manages Side Effects
+
+Effect Function: The first argument to useEffect is a function that contains the side effect code.
+
+Cleanup Function: Optionally, this function can return another function to clean up after the effect. This is useful for unsubscribing from subscriptions or timers.
+
+Dependencies: The second argument is an array of dependencies. The effect will only run if one of the dependencies has changed since the last render. If you pass an empty array [], the effect will run only once after the initial render.
+
+
+
+3. Create a global state management system using the Context API and useContext hook to build a theme toggle React mini project. Follow these steps to implement a light/dark theme toggle feature.
+
+Steps to Complete the Assignment
+1.Create a Them Context
+.Define a theme context in a new file.
+
+2.Create a Theme Provider
+.Define the ThemeProvider component to provide the theme and toggle function using the useState hook.
+
+3.Use the ThemeProvider in Your App
+.Wrap your application with the ThemeProvider in the main application file.
+
+4.Create a Themed Component
+.Create a component that consumers the theme using the useContext hook.
+
+
+Answer: 
+Step 1: Create a Theme Context
+
+Create a new file called `themContext.js`
+
+import React, { createContext, useState, useContext } from 'react';
+
+// Create a context with default value
+const ThemeContext = createContext();
+
+export const useTheme = () => useContext(ThemeContext);
+
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
+
+Wrap your application with the ThemeProvider in your main application file, typically index.js or `App.js`.
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { ThemeProvider } from './ThemeContext';
+
+index.js
+
+ReactDOM.render(
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root')
+);
+
+App.js
+import React from 'react';
+import ThemedComponent from './ThemedComponent';
+
+const App = () => {
+  return (
+    <div>
+      <ThemedComponent />
+    </div>
+  );
+};
+
+export default App;
+Create a component that consumes the theme using the useContext hook. For example, ThemedComponent.js:
+
+import React from 'react';
+import { useTheme } from './ThemeContext';
+
+const ThemedComponent = () => {
+  const { theme, toggleTheme } = useTheme();
+
+  const styles = {
+    light: {
+      backgroundColor: '#fff',
+      color: '#000',
+    },
+    dark: {
+      backgroundColor: '#333',
+      color: '#fff',
+    },
+  };
+
+  return (
+    <div style={styles[theme]}>
+      <p>The current theme is {theme}</p>
+      <button onClick={toggleTheme}>Toggle Theme</button>
+    </div>
+  );
+};
+
+export default ThemedComponent;
+
+
+4. Set up a basic React Router v6 application with multiple pages and navigation.
+
+Task:
+.Create a new React application using the Create React App.
+.install react-router-dom.
+.Set up the following routes:
+.Home(/)
+.About(/about)
+.Contact(/contact)
+.Create corresponding components for each route.
+.Use the Link component to navigaate between the pages.
+
+
+Answer:
+
+create a new React application using Create React App:
+npx create-react-app my-router-app
+cd my-router-app
+
+Install react-router-dom:
+
+npm install react-router-dom
+
+In our src folder, create a components folder, and inside it, create files for your components: Home.js, About.js, and Contact.js.
+
+import React from 'react';
+
+src/components/Home.js
+
+const Home = () => {
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <p>Welcome to the Home Page!</p>
+    </div>
+  );
+};
+
+export default Home;
+
+src/components/About.js
+
+import React from 'react';
+
+const About = () => {
+  return (
+    <div>
+      <h1>About Page</h1>
+      <p>This is the About Page.</p>
+    </div>
+  );
+};
+
+export default About;
+
+src/components/Contact.js
+
+import React from 'react';
+
+const Contact = () => {
+  return (
+    <div>
+      <h1>Contact Page</h1>
+      <p>This is the Contact Page.</p>
+    </div>
+  );
+};
+
+export default Contact;
+
+src/App.js to set up the routes and navigation:
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+
+
+Form Handling & State Management
+Q1. Create a simple form with controlled components in React.
+
+1. Task:
+.Create a from component (LoginForm) with fields for username and password.
+.Implement controlled components for each input field.
+.Display validation errors if either field is empty upon from submission.
+.Log the form data to the console upon successful submission.
+
+2. Deliverables:
+.A LoginForm component that uses controlled components for username and password.
+.Validation logic to display erros if fields are empty.
+.console log of from data upon successful submission.
+
+
+Answer:
+
+In our src folder, create a new file called LoginForm.js and implement the form component:
+
+src/LoginForm.js
+
+import React, { useState } from 'react';
+
+const LoginForm = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState({});
+
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!username) newErrors.username = 'Username is required';
+    if (!password) newErrors.password = 'Password is required';
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+    } else {
+      console.log('Form Data:', { username, password });
+      setErrors({});
+    }
+  };
+
+  return (
+    <div>
+      <h2>Login Form</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            value={username}
+            onChange={handleUsernameChange}
+          />
+          {errors.username && <p style={{ color: 'red' }}>{errors.username}</p>}
+        </div>
+        <div>
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  );
+};
+
+export default LoginForm;
+
+src/App.js to include the LoginForm component:
+
+src/App.js
+
+import React from 'react';
+import LoginForm from './LoginForm';
+
+const App = () => {
+  return (
+    <div>
+      <LoginForm />
+    </div>
+  );
+};
+
+export default App;
+
+Q,2. Implement form validation using React state and conditional rendering.
+
+1. Task:
+.Create a form component (RegistrationForm) with fields for name, email, and password.
+.Implement state to manage form inputs and validation erros.
+.Validate name(required, minimum length), email(required,valid format),and password(required, minimum length).
+.Display error messages next to each field if validation fails.
+.Disable the submit button until all fields are valid.
+.Alert the user with a success message upon valid form submission.
+
+2. Deliverables:
+.A registrationForm component with controlled inputs and validation state.
+.Validation rules for name, email, and password.
+.Error messages are displayed conditionally based on form validity.
+.Alert message upon successful form submission.
+
+Answer:
+
+In our src folder, create a new file called RegistrationForm.js and implement the form component:
+
+src/RegistrationForm.js
+
+import React, { useState, useEffect } from 'react';
+
+const RegistrationForm = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState({});
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const validateName = () => {
+    if (!name) return 'Name is required';
+    if (name.length < 3) return 'Name must be at least 3 characters long';
+    return '';
+  };
+
+  const validateEmail = () => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email) return 'Email is required';
+    if (!emailPattern.test(email)) return 'Email is not valid';
+    return '';
+  };
+
+  const validatePassword = () => {
+    if (!password) return 'Password is required';
+    if (password.length < 6) return 'Password must be at least 6 characters long';
+    return '';
+  };
+
+  const validateForm = () => {
+    const newErrors = {
+      name: validateName(),
+      email: validateEmail(),
+      password: validatePassword(),
+    };
+    setErrors(newErrors);
+    setIsFormValid(!Object.values(newErrors).some((error) => error));
+  };
+
+  useEffect(() => {
+    validateForm();
+  }, [name, email, password]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (isFormValid) {
+      alert('Form submitted successfully!');
+      console.log('Form Data:', { name, email, password });
+    }
+  };
+
+  return (
+    <div>
+      <h2>Registration Form</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={handleNameChange}
+          />
+          {errors.name && <p style={{ color: 'red' }}>{errors.name}</p>}
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+          />
+          {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
+        </div>
+        <div>
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
+        </div>
+        <button type="submit" disabled={!isFormValid}>
+          Register
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default RegistrationForm;
+
+
+src/App.js to include the RegistrationForm component:
+src/App.js
+
+import React from 'react';
+import RegistrationForm from './RegistrationForm';
+
+const App = () => {
+  return (
+    <div>
+      <RegistrationForm />
+    </div>
+  );
+};
+
+export default App;
+
+
+Q3. Set up Redux store,  actions, and reducers for basic state management.
+1. Task:
+. Initialize a new React application with Redux using Create React App.
+.Set up Redux store, actions, and reducers.
+.Create a feature for managing a counter:
+   .Implement actions (increment, decrement) and corresponding reducers to update the counter state.
+   .Display the counter value in a React component(Counter connected to the Redux store.)
+   .Include buttons to increment and decrement the counter.
+
+   2. Deliverables:
+   .A Redux store configured with actions and reducers for managing a counter.
+   .A counter component displaying the counter value and buttons to update it.
+   .Proper integration or Redux with React components using connect or useSelector and useDispatch hooks.
+
+Answer:
+
+Step 1: Initialize a New React Application
+First, create a new React application using Create React App:
+npx create-react-app my-redux-app
+cd my-redux-app
+
+Step 2: Install Redux and React-Redux
+Install redux and react-redux:
+
+npm install redux react-redux
+
+Step 3: Set Up Redux Store, Actions, and Reducers
+
+Create a redux folder in your src directory to organize your Redux files. Inside the redux folder, create store.js, actions.js, and reducers.js files.
+
+src/redux/store.js
+
+import { createStore } from 'redux';
+import counterReducer from './reducers';
+
+const store = createStore(counterReducer);
+
+export default store;
+
+
+src/redux/actions.js
+export const increment = () => {
+  return {
+    type: 'INCREMENT',
+  };
+};
+
+export const decrement = () => {
+  return {
+    type: 'DECREMENT',
+  };
+};
+
+src/redux/reducers.js
+
+const initialState = {
+  count: 0,
+};
+
+const counterReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case 'INCREMENT':
+      return {
+        ...state,
+        count: state.count + 1,
+      };
+    case 'DECREMENT':
+      return {
+        ...state,
+        count: state.count - 1,
+      };
+    default:
+      return state;
+  }
+};
+
+export default counterReducer;
+
+Step 4: Create the Counter Component
+
+Create a components folder in your src directory, and inside it, create a Counter.js file:
+
+src/components/Counter.js
+
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from '../redux/actions';
+
+const Counter = () => {
+  const count = useSelector((state) => state.count);
+  const dispatch = useDispatch();
+
+  return (
+    <div>
+      <h1>Counter: {count}</h1>
+      <button onClick={() => dispatch(increment())}>Increment</button>
+      <button onClick={() => dispatch(decrement())}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+Step 5: Use the Redux Store in Your App
+
+src/index.js to include the Provider component from react-redux and wrap your application with it:
+
+src/index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import App from './App';
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
+
+src/App.js to include the Counter component:
+
+src/App.js
+
+import React from 'react';
+import Counter from './components/Counter';
+
+const App = () => {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+};
+
+export default App;
+
+Step 6: Start Our Application
+
+Start your React application to see the counter in action:
+
+npm start
